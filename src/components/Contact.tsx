@@ -1,11 +1,11 @@
 import { Mail, Phone, MapPin, Clock, Instagram, Facebook } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Contact = () => {
+  const { t } = useLanguage();
   const whatsappNumber = "5511258976005";
-  const whatsappMessage = encodeURIComponent(
-    "Olá! Gostaria de saber mais sobre os serviços da Global Key."
-  );
+  const whatsappMessage = encodeURIComponent(t.whatsapp.message);
 
   return (
     <section id="contato" className="py-20 bg-muted/30">
@@ -13,11 +13,11 @@ const Contact = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Entre em contato
+              {t.contact.title}
             </h2>
             <div className="w-20 h-1 bg-gradient-primary mx-auto mb-6"></div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Estamos prontos para atender você
+              {t.contact.subtitle}
             </p>
           </div>
 
@@ -29,7 +29,7 @@ const Contact = () => {
                     <Phone className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-1">Telefone</h3>
+                    <h3 className="font-semibold text-foreground mb-1">{t.contact.phone}</h3>
                     <a
                       href="tel:+551125897600"
                       className="text-muted-foreground hover:text-primary transition-colors"
@@ -46,7 +46,7 @@ const Contact = () => {
                     <Mail className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-1">E-mail</h3>
+                    <h3 className="font-semibold text-foreground mb-1">{t.contact.email}</h3>
                     <a
                       href="mailto:leonardo@globalkey.com.br"
                       className="text-muted-foreground hover:text-primary transition-colors break-all"
@@ -63,11 +63,9 @@ const Contact = () => {
                     <MapPin className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-1">Endereço</h3>
+                    <h3 className="font-semibold text-foreground mb-1">{t.contact.address}</h3>
                     <p className="text-muted-foreground">
-                      Rua Dr. Albuquerque Lins, 503, CJ 113
-                      <br />
-                      São Paulo - SP
+                      {t.contact.addressText}
                     </p>
                   </div>
                 </div>
@@ -79,19 +77,17 @@ const Contact = () => {
                     <Clock className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-1">Horário</h3>
-                    <p className="text-muted-foreground">Segunda a Sexta</p>
-                    <p className="text-muted-foreground">09:00 - 18:00</p>
+                    <h3 className="font-semibold text-foreground mb-1">{t.contact.hours}</h3>
+                    <p className="text-muted-foreground">{t.contact.hoursText}</p>
                   </div>
                 </div>
               </div>
             </div>
 
             <div className="bg-gradient-primary rounded-2xl p-8 text-white flex flex-col justify-center">
-              <h3 className="text-2xl font-bold mb-4">Fale conosco agora</h3>
+              <h3 className="text-2xl font-bold mb-4">{t.contact.ctaTitle}</h3>
               <p className="text-white/90 mb-8">
-                Entre em contato pelo WhatsApp e tire suas dúvidas sobre nossos serviços e
-                produtos.
+                {t.contact.ctaDescription}
               </p>
               <Button
                 asChild
@@ -104,12 +100,12 @@ const Contact = () => {
                   rel="noopener noreferrer"
                 >
                   <Phone className="mr-2 h-5 w-5" />
-                  Enviar mensagem
+                  {t.contact.ctaButton}
                 </a>
               </Button>
 
               <div className="border-t border-white/20 pt-6 mt-2">
-                <p className="text-sm text-white/80 mb-4">Siga-nos nas redes sociais:</p>
+                <p className="text-sm text-white/80 mb-4">{t.contact.followTitle}</p>
                 <div className="flex gap-4">
                   <a
                     href="https://www.instagram.com/fibra_kapton_global_key/"
@@ -135,8 +131,8 @@ const Contact = () => {
           </div>
 
           <div className="mt-12 text-center text-sm text-muted-foreground">
-            <p>CNPJ: 09.310.556/0001-59</p>
-            <p className="mt-2">Global Key Comercio e Serviços LTDA</p>
+            <p>{t.contact.cnpj}</p>
+            <p className="mt-2">{t.contact.company}</p>
           </div>
         </div>
       </div>

@@ -1,9 +1,12 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import LanguageSelector from "./LanguageSelector";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
 
 const Header = () => {
+  const { t } = useLanguage();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -44,31 +47,32 @@ const Header = () => {
               onClick={() => scrollToSection("inicio")}
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
             >
-              Início
+              {t.header.home}
             </button>
             <button
               onClick={() => scrollToSection("sobre")}
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
             >
-              Sobre
+              {t.header.about}
             </button>
             <button
               onClick={() => scrollToSection("servicos")}
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
             >
-              Serviços
+              {t.header.services}
             </button>
             <button
               onClick={() => scrollToSection("valores")}
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
             >
-              Valores
+              {t.header.values}
             </button>
+            <LanguageSelector />
             <Button
               onClick={() => scrollToSection("contato")}
               className="bg-primary hover:bg-primary-dark text-primary-foreground"
             >
-              Contato
+              {t.header.contact}
             </Button>
           </nav>
 
@@ -90,31 +94,34 @@ const Header = () => {
                 onClick={() => scrollToSection("inicio")}
                 className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors py-2"
               >
-                Início
+                {t.header.home}
               </button>
               <button
                 onClick={() => scrollToSection("sobre")}
                 className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors py-2"
               >
-                Sobre
+                {t.header.about}
               </button>
               <button
                 onClick={() => scrollToSection("servicos")}
                 className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors py-2"
               >
-                Serviços
+                {t.header.services}
               </button>
               <button
                 onClick={() => scrollToSection("valores")}
                 className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors py-2"
               >
-                Valores
+                {t.header.values}
               </button>
+              <div className="py-2">
+                <LanguageSelector />
+              </div>
               <Button
                 onClick={() => scrollToSection("contato")}
                 className="bg-primary hover:bg-primary-dark text-primary-foreground w-full"
               >
-                Contato
+                {t.header.contact}
               </Button>
             </div>
           </nav>

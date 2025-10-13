@@ -1,7 +1,10 @@
 import { Globe2, TrendingUp, Package } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Hero = () => {
+  const { t } = useLanguage();
+  
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
@@ -17,14 +20,13 @@ const Hero = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 animate-fade-in">
-            Global Key
+            {t.hero.title}
           </h1>
-          <h2 className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-8 animate-fade-in">
-            Soluções completas em comércio exterior e produtos premium para alto-falantes
+          <h2 className="text-xl md:text-2xl lg:text-3xl text-primary mb-8 font-semibold animate-fade-in">
+            {t.hero.subtitle}
           </h2>
-          <p className="text-lg text-foreground/80 mb-12 max-w-2xl mx-auto animate-fade-in">
-            Assessoria internacional, importação, exportação e a melhor linha de materiais para
-            reparo de alto-falantes do Brasil.
+          <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto animate-fade-in">
+            {t.hero.description}
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center mb-16 animate-fade-in">
@@ -33,7 +35,7 @@ const Hero = () => {
               size="lg"
               className="bg-primary hover:bg-primary-dark text-primary-foreground"
             >
-              Nossos serviços
+              {t.hero.servicesBtn}
             </Button>
             <Button
               onClick={() => scrollToSection("contato")}
@@ -41,7 +43,7 @@ const Hero = () => {
               variant="outline"
               className="border-primary/60 text-primary hover:bg-primary/10 hover:border-primary"
             >
-              Fale conosco
+              {t.hero.contactBtn}
             </Button>
           </div>
 
@@ -50,9 +52,9 @@ const Hero = () => {
               <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                 <Globe2 className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-lg font-semibold text-foreground mb-2">Comércio global</h3>
+              <h3 className="text-lg font-semibold text-foreground mb-2">{t.hero.highlight1Title}</h3>
               <p className="text-sm text-muted-foreground text-center">
-                Importação e exportação com atendimento em 3 idiomas
+                {t.hero.highlight1Desc}
               </p>
             </div>
 
@@ -60,9 +62,9 @@ const Hero = () => {
               <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                 <TrendingUp className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-lg font-semibold text-foreground mb-2">Experiência comprovada</h3>
+              <h3 className="text-lg font-semibold text-foreground mb-2">{t.hero.highlight2Title}</h3>
               <p className="text-sm text-muted-foreground text-center">
-                Desde 2009 conectando empresas ao mercado internacional
+                {t.hero.highlight2Desc}
               </p>
             </div>
 
@@ -70,9 +72,9 @@ const Hero = () => {
               <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                 <Package className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-lg font-semibold text-foreground mb-2">Produtos premium</h3>
+              <h3 className="text-lg font-semibold text-foreground mb-2">{t.hero.highlight3Title}</h3>
               <p className="text-sm text-muted-foreground text-center">
-                A melhor linha de materiais para alto-falantes do Brasil
+                {t.hero.highlight3Desc}
               </p>
             </div>
           </div>

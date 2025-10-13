@@ -1,17 +1,20 @@
 import { Building2, Users, Globe } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const About = () => {
+  const { t } = useLanguage();
+  
   return (
     <section id="sobre" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Nossa história
+              {t.about.title}
             </h2>
             <div className="w-20 h-1 bg-gradient-primary mx-auto mb-6"></div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Desde 2009 conectando o Brasil ao mundo
+              {t.about.subtitle}
             </p>
           </div>
 
@@ -22,10 +25,9 @@ const About = () => {
                   <Building2 className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-foreground mb-2">Fundação</h3>
+                  <h3 className="text-xl font-semibold text-foreground mb-2">{t.about.milestone1Title}</h3>
                   <p className="text-muted-foreground">
-                    A empresa foi fundada em 2009, motivada pelo conhecimento herdado da família
-                    no comércio exterior e o espírito empreendedor presente em gerações.
+                    {t.about.milestone1Desc}
                   </p>
                 </div>
               </div>
@@ -35,10 +37,9 @@ const About = () => {
                   <Globe className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-foreground mb-2">Expansão global</h3>
+                  <h3 className="text-xl font-semibold text-foreground mb-2">{t.about.milestone2Title}</h3>
                   <p className="text-muted-foreground">
-                    Em 2009, buscando novas oportunidades, nosso fundador foi à China explorar o
-                    mercado asiático, rompendo com o eixo tradicional Brasil-EUA-Europa.
+                    {t.about.milestone2Desc}
                   </p>
                 </div>
               </div>
@@ -48,55 +49,43 @@ const About = () => {
                   <Users className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-foreground mb-2">Especialização</h3>
+                  <h3 className="text-xl font-semibold text-foreground mb-2">{t.about.milestone3Title}</h3>
                   <p className="text-muted-foreground">
-                    Com o tempo, nos especializamos em materiais isolantes para alto-falantes,
-                    consolidando nossa posição como referência no setor.
+                    {t.about.milestone3Desc}
                   </p>
                 </div>
               </div>
             </div>
 
             <div className="bg-muted rounded-2xl p-8">
-              <p className="text-foreground leading-relaxed mb-6">
-                Formado em Comércio Exterior pela Universidade Presbiteriana Mackenzie, com
-                experiências acadêmicas nos Estados Unidos, Canadá e Reino Unido, nosso fundador
-                carrega consigo profundo conhecimento sobre culturas e mercados internacionais.
-              </p>
-              <p className="text-foreground leading-relaxed mb-6">
-                Foram quase dois meses na China em uma jornada movida por curiosidade e
-                determinação, em busca de um segmento para atuar. Após explorar diferentes
-                nichos, encontramos nossa vocação nos materiais para alto-falantes.
-              </p>
-              <p className="text-foreground leading-relaxed">
-                Hoje, a Global Key atende clientes em todo o Brasil e em diversos países como
-                Arábia Saudita, Argentina e China, oferecendo serviços completos de importação,
-                exportação e assessoria internacional.
+              <h3 className="text-xl font-bold text-foreground mb-4">{t.about.historyTitle}</h3>
+              <p className="text-foreground leading-relaxed whitespace-pre-line">
+                {t.about.historyText}
               </p>
             </div>
           </div>
 
           <div className="bg-gradient-primary rounded-2xl p-8 md:p-12 text-white">
             <h3 className="text-2xl md:text-3xl font-bold mb-6 text-center">
-              Nossos próximos objetivos
+              {t.about.objectivesTitle}
             </h3>
             <div className="grid md:grid-cols-3 gap-6">
               <div className="text-center">
                 <div className="text-4xl font-bold mb-2">🇨🇳</div>
                 <p className="text-white/90">
-                  Aperfeiçoar domínio da língua chinesa e consolidar exportações para a China
+                  {t.about.objective1}
                 </p>
               </div>
               <div className="text-center">
                 <div className="text-4xl font-bold mb-2">📦</div>
                 <p className="text-white/90">
-                  Ampliar linha de produtos voltados a reparos de alto-falantes
+                  {t.about.objective2}
                 </p>
               </div>
               <div className="text-center">
                 <div className="text-4xl font-bold mb-2">🌎</div>
                 <p className="text-white/90">
-                  Expandir serviços de comércio exterior no mercado nacional
+                  {t.about.objective3}
                 </p>
               </div>
             </div>
