@@ -2,7 +2,7 @@ export const es = {
   // Header
   header: {
     home: "Inicio",
-    about: "Acerca de",
+    about: "Nosotros",
     services: "Servicios",
     values: "Valores",
     contact: "Contacto",
@@ -103,7 +103,7 @@ export const es = {
     visionText: "Ser referencia en la comercialización de productos nacionales o importados, así como en la prestación de servicios en Brasil o en el exterior.",
     valuesTitle: "Valores",
     value1: "Respetar al individuo, independientemente de sus características",
-    value2: "Buscar superar las expectativas de nuestros clientes, proveedores y socios",
+    value2: "Buscar superar las expectativas de nuestros clientes, proveedores y colaboradores",
   },
 
   // Contact
