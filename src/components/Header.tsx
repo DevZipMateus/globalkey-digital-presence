@@ -34,12 +34,8 @@ const Header = () => {
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          <div className="flex items-center gap-3">
-            <img src={logo} alt="Global Key" className="h-12 w-auto" />
-            <div className="hidden sm:block">
-              <div className="text-lg font-semibold text-foreground">Global Key</div>
-              <div className="text-xs text-muted-foreground">Bridging the gaps</div>
-            </div>
+          <div className="flex items-center">
+            <img src={logo} alt="Global Key - Bridging the gaps" className="h-14 w-auto" />
           </div>
 
           {/* Desktop Menu */}
