@@ -103,7 +103,7 @@ export const en = {
     visionText: "To be a reference in the commercialization of national or imported products, as well as in the provision of services in Brazil or abroad.",
     valuesTitle: "Values",
     value1: "Respect the individual, regardless of their characteristics",
-    value2: "Seek to exceed the expectations of our customers, suppliers and partners",
+    value2: "Seek to exceed the expectations of our customers, suppliers and collaborators",
   },
 
   // Contact
