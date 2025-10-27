@@ -28,7 +28,7 @@ const Hero = () => {
       }}
     >
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center bg-white/20 backdrop-blur-sm rounded-2xl p-8 md:p-12 shadow-2xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in drop-shadow-lg">
             {t.hero.title}
           </h1>
