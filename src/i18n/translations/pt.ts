@@ -125,6 +125,12 @@ export const pt = {
     cnpj: "CNPJ: 11.104.845/0001-90",
   },
 
+  // Gallery
+  gallery: {
+    title: "Galeria de Produtos",
+    description: "Conheça alguns de nossos produtos de alta qualidade para a indústria elétrica.",
+  },
+
   // WhatsApp
   whatsapp: {
     message: "Olá! Gostaria de saber mais sobre os serviços da Global Key.",
