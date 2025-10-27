@@ -2,33 +2,30 @@ import { Globe2, TrendingUp, Package } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import heroBackground from "@/assets/hero-background.jpg";
-
 const Hero = () => {
-  const { t } = useLanguage();
-  
+  const {
+    t
+  } = useLanguage();
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
       const headerOffset = 80;
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-      window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
     }
   };
-
-  return (
-    <section 
-      id="inicio" 
-      className="pt-32 pb-20 bg-gradient-hero relative overflow-hidden"
-      style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${heroBackground})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
-      }}
-    >
+  return <section id="inicio" className="pt-32 pb-20 bg-gradient-hero relative overflow-hidden" style={{
+    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${heroBackground})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundAttachment: 'fixed'
+  }}>
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto text-center bg-white/20 backdrop-blur-sm rounded-2xl p-8 md:p-12 shadow-2xl">
+        <div className="max-w-4xl mx-auto text-center backdrop-blur-sm rounded-2xl p-8 md:p-12 shadow-2xl bg-black/20">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in drop-shadow-lg">
             {t.hero.title}
           </h1>
@@ -40,19 +37,10 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center mb-16 animate-fade-in">
-            <Button
-              onClick={() => scrollToSection("servicos")}
-              size="lg"
-              className="bg-primary hover:bg-primary/90 text-white shadow-lg"
-            >
+            <Button onClick={() => scrollToSection("servicos")} size="lg" className="bg-primary hover:bg-primary/90 text-white shadow-lg">
               {t.hero.servicesBtn}
             </Button>
-            <Button
-              onClick={() => scrollToSection("contato")}
-              size="lg"
-              variant="outline"
-              className="border-2 border-white text-white hover:bg-white/10 hover:border-primary shadow-lg"
-            >
+            <Button onClick={() => scrollToSection("contato")} size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10 hover:border-primary shadow-lg">
               {t.hero.contactBtn}
             </Button>
           </div>
@@ -90,8 +78,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
