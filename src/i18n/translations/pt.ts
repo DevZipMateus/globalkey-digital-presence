@@ -129,6 +129,15 @@ export const pt = {
   gallery: {
     title: "Galeria de Produtos",
     description: "Conheça alguns de nossos produtos de alta qualidade para a indústria elétrica.",
+    product1: "Fibra Laranja 0.15mm",
+    product2: "Fibra Marrom",
+    product3: "Fibra Preta",
+    product4: "Filme de Polimida Black High Performance",
+    product5: "Filme de Polimida sem Adesivo",
+    product6: "Filme de Polimida sem Adesivo",
+    product7: "Filme de Polimida com Adesivo",
+    product8: "Filme de Polimida com Adesivo",
+    product9: "Fio CCA",
   },
 
   // WhatsApp

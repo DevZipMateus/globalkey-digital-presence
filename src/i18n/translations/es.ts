@@ -129,6 +129,15 @@ export const es = {
   gallery: {
     title: "Galería de Productos",
     description: "Conozca algunos de nuestros productos de alta calidad para la industria eléctrica.",
+    product1: "Fibra Naranja 0.15mm",
+    product2: "Fibra Marrón",
+    product3: "Fibra Negra",
+    product4: "Película de Poliimida Black High Performance",
+    product5: "Película de Poliimida sin Adhesivo",
+    product6: "Película de Poliimida sin Adhesivo",
+    product7: "Película de Poliimida con Adhesivo",
+    product8: "Película de Poliimida con Adhesivo",
+    product9: "Alambre CCA",
   },
 
   // WhatsApp

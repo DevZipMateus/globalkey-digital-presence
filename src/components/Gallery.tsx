@@ -13,15 +13,15 @@ const Gallery = () => {
   const { t } = useLanguage();
 
   const images = [
-    { src: fibraLaranja, alt: "Fibra Laranja 0.15mm" },
-    { src: fibraMarrom, alt: "Fibra Marrom" },
-    { src: fibraPreta, alt: "Fibra Preta" },
-    { src: filmePolimidaBlack, alt: "Filme de Polimida Black High Performance" },
-    { src: filmePolimidaSemAdesivo, alt: "Filme de Polimida sem Adesivo" },
-    { src: filmePolimidaSemAdesivo2, alt: "Filme de Polimida sem Adesivo" },
-    { src: filmePolimidaAdesivo, alt: "Filme de Polimida com Adesivo" },
-    { src: filmePolimidaAdesivo2, alt: "Filme de Polimida com Adesivo" },
-    { src: fioCca, alt: "Fio CCA" },
+    { src: fibraLaranja, alt: t.gallery.product1, name: t.gallery.product1 },
+    { src: fibraMarrom, alt: t.gallery.product2, name: t.gallery.product2 },
+    { src: fibraPreta, alt: t.gallery.product3, name: t.gallery.product3 },
+    { src: filmePolimidaBlack, alt: t.gallery.product4, name: t.gallery.product4 },
+    { src: filmePolimidaSemAdesivo, alt: t.gallery.product5, name: t.gallery.product5 },
+    { src: filmePolimidaSemAdesivo2, alt: t.gallery.product6, name: t.gallery.product6 },
+    { src: filmePolimidaAdesivo, alt: t.gallery.product7, name: t.gallery.product7 },
+    { src: filmePolimidaAdesivo2, alt: t.gallery.product8, name: t.gallery.product8 },
+    { src: fioCca, alt: t.gallery.product9, name: t.gallery.product9 },
   ];
 
   return (
@@ -47,6 +47,11 @@ const Gallery = () => {
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   loading="lazy"
                 />
+              </div>
+              <div className="p-4 bg-card">
+                <h3 className="text-sm font-semibold text-foreground text-center">
+                  {image.name}
+                </h3>
               </div>
             </div>
           ))}

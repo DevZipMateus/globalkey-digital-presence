@@ -129,6 +129,15 @@ export const en = {
   gallery: {
     title: "Product Gallery",
     description: "Discover some of our high-quality products for the electrical industry.",
+    product1: "Orange Fiber 0.15mm",
+    product2: "Brown Fiber",
+    product3: "Black Fiber",
+    product4: "Polyimide Film Black High Performance",
+    product5: "Polyimide Film without Adhesive",
+    product6: "Polyimide Film without Adhesive",
+    product7: "Polyimide Film with Adhesive",
+    product8: "Polyimide Film with Adhesive",
+    product9: "CCA Wire",
   },
 
   // WhatsApp
