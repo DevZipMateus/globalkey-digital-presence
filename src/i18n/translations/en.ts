@@ -130,4 +130,12 @@ export const en = {
     message: "Hello! I would like to know more about Global Key's services.",
     ariaLabel: "Chat on WhatsApp",
   },
+
+  // Footer
+  footer: {
+    description: "Excellence in international consulting and specialized products for speaker repairs.",
+    quickLinks: "Quick Links",
+    contact: "Contact",
+    copyright: "© 2025 Global Key Comercio e Serviços LTDA. All rights reserved.",
+  },
 };

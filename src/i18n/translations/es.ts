@@ -130,4 +130,12 @@ export const es = {
     message: "¡Hola! Me gustaría saber más sobre los servicios de Global Key.",
     ariaLabel: "Hablar en WhatsApp",
   },
+
+  // Footer
+  footer: {
+    description: "Excelencia en consultoría internacional y productos especializados para reparación de altavoces.",
+    quickLinks: "Enlaces Rápidos",
+    contact: "Contacto",
+    copyright: "© 2025 Global Key Comercio e Serviços LTDA. Todos los derechos reservados.",
+  },
 };
