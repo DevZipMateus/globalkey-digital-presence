@@ -8,20 +8,20 @@ const Contact = () => {
   const whatsappMessage = encodeURIComponent(t.whatsapp.message);
 
   return (
-    <section id="contato" className="py-20 bg-muted/30">
+    <section id="contato" className="py-12 sm:py-16 md:py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <div className="text-center mb-8 sm:mb-12 md:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 sm:mb-4">
               {t.contact.title}
             </h2>
-            <div className="w-20 h-1 bg-gradient-primary mx-auto mb-6"></div>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <div className="w-16 sm:w-20 h-1 bg-gradient-primary mx-auto mb-4 sm:mb-6"></div>
+            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
               {t.contact.subtitle}
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-2 gap-6 sm:gap-8 md:gap-12">
             <div className="space-y-6">
               <div className="bg-white rounded-xl p-6 shadow-soft hover:shadow-medium transition-all">
                 <div className="flex items-start gap-4">
@@ -84,7 +84,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="bg-gradient-primary rounded-2xl p-8 text-white flex flex-col justify-center">
+            <div className="bg-gradient-primary rounded-xl md:rounded-2xl p-6 sm:p-8 text-white flex flex-col justify-center">
               <h3 className="text-2xl font-bold mb-4">{t.contact.ctaTitle}</h3>
               <p className="text-white/90 mb-8">
                 {t.contact.ctaDescription}

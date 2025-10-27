@@ -25,16 +25,16 @@ const Gallery = () => {
   ];
 
   return (
-    <section id="gallery" className="py-20 bg-background">
+    <section id="gallery" className="py-12 sm:py-16 md:py-20 bg-background">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-4 text-foreground">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-3 sm:mb-4 text-foreground">
           {t.gallery.title}
         </h2>
-        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+        <p className="text-center text-sm sm:text-base text-muted-foreground mb-8 sm:mb-12 max-w-2xl mx-auto px-4">
           {t.gallery.description}
         </p>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {images.map((image, index) => (
             <div
               key={index}

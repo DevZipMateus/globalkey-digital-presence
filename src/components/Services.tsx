@@ -7,27 +7,27 @@ const Services = () => {
   const { t } = useLanguage();
   
   return (
-    <section id="servicos" className="py-20 bg-muted/30">
+    <section id="servicos" className="py-12 sm:py-16 md:py-20 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <div className="text-center mb-8 sm:mb-12 md:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 sm:mb-4">
               {t.services.title}
             </h2>
-            <div className="w-20 h-1 bg-gradient-primary mx-auto mb-6"></div>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <div className="w-16 sm:w-20 h-1 bg-gradient-primary mx-auto mb-4 sm:mb-6"></div>
+            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
               {t.services.description}
             </p>
           </div>
 
           <Tabs defaultValue="assessoria" className="w-full">
-            <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-12">
+            <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-8 sm:mb-12 h-auto">
               <TabsTrigger value="assessoria">{t.services.tab1}</TabsTrigger>
               <TabsTrigger value="produtos">{t.services.tab2}</TabsTrigger>
             </TabsList>
 
-            <TabsContent value="assessoria" className="space-y-8">
-              <div className="bg-white rounded-2xl p-8 shadow-soft">
+            <TabsContent value="assessoria" className="space-y-6 sm:space-y-8">
+              <div className="bg-white rounded-xl md:rounded-2xl p-4 sm:p-6 md:p-8 shadow-soft">
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center">
                     <Ship className="w-8 h-8 text-primary" />
@@ -38,7 +38,7 @@ const Services = () => {
                   </div>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-6">
+                <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
                   <Card>
                     <CardHeader>
                       <CardTitle className="flex items-center gap-2">
@@ -84,8 +84,8 @@ const Services = () => {
               </div>
             </TabsContent>
 
-            <TabsContent value="produtos" className="space-y-6">
-              <div className="bg-white rounded-2xl p-8 shadow-soft mb-6">
+            <TabsContent value="produtos" className="space-y-4 sm:space-y-6">
+              <div className="bg-white rounded-xl md:rounded-2xl p-4 sm:p-6 md:p-8 shadow-soft mb-4 sm:mb-6">
                 <h3 className="text-xl font-bold text-foreground mb-2">{t.services.productsTitle}</h3>
                 <p className="text-muted-foreground">{t.services.productsIntro}</p>
               </div>

@@ -5,18 +5,18 @@ const Values = () => {
   const { t } = useLanguage();
   
   return (
-    <section id="valores" className="py-20 bg-white">
+    <section id="valores" className="py-12 sm:py-16 md:py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <div className="text-center mb-8 sm:mb-12 md:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 sm:mb-4">
               {t.values.title}
             </h2>
-            <div className="w-20 h-1 bg-gradient-primary mx-auto mb-6"></div>
+            <div className="w-16 sm:w-20 h-1 bg-gradient-primary mx-auto mb-4 sm:mb-6"></div>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-muted/30 rounded-2xl p-8 hover:shadow-medium transition-all">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+            <div className="bg-muted/30 rounded-xl md:rounded-2xl p-6 sm:p-8 hover:shadow-medium transition-all">
               <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
                 <Target className="w-8 h-8 text-primary" />
               </div>
@@ -26,7 +26,7 @@ const Values = () => {
               </p>
             </div>
 
-            <div className="bg-muted/30 rounded-2xl p-8 hover:shadow-medium transition-all">
+            <div className="bg-muted/30 rounded-xl md:rounded-2xl p-6 sm:p-8 hover:shadow-medium transition-all">
               <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
                 <Eye className="w-8 h-8 text-primary" />
               </div>
@@ -36,7 +36,7 @@ const Values = () => {
               </p>
             </div>
 
-            <div className="bg-muted/30 rounded-2xl p-8 hover:shadow-medium transition-all">
+            <div className="bg-muted/30 rounded-xl md:rounded-2xl p-6 sm:p-8 hover:shadow-medium transition-all">
               <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
                 <Heart className="w-8 h-8 text-primary" />
               </div>

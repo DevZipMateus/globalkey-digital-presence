@@ -5,20 +5,20 @@ const About = () => {
   const { t } = useLanguage();
   
   return (
-    <section id="sobre" className="py-20 bg-white">
+    <section id="sobre" className="py-12 sm:py-16 md:py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+          <div className="text-center mb-8 sm:mb-12 md:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3 sm:mb-4">
               {t.about.title}
             </h2>
-            <div className="w-20 h-1 bg-gradient-primary mx-auto mb-6"></div>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <div className="w-16 sm:w-20 h-1 bg-gradient-primary mx-auto mb-4 sm:mb-6"></div>
+            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
               {t.about.subtitle}
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+          <div className="grid md:grid-cols-2 gap-6 sm:gap-8 md:gap-12 items-center mb-8 sm:mb-12 md:mb-16">
             <div className="space-y-6">
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
@@ -65,11 +65,11 @@ const About = () => {
             </div>
           </div>
 
-          <div className="bg-gradient-primary rounded-2xl p-8 md:p-12 text-white">
-            <h3 className="text-2xl md:text-3xl font-bold mb-6 text-center">
+          <div className="bg-gradient-primary rounded-xl md:rounded-2xl p-6 sm:p-8 md:p-12 text-white">
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-6 text-center">
               {t.about.objectivesTitle}
             </h3>
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
               <div className="text-center">
                 <div className="text-4xl font-bold mb-2">🇨🇳</div>
                 <p className="text-white/90">
