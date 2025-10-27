@@ -32,7 +32,7 @@ const Hero = () => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in drop-shadow-lg">
             {t.hero.title}
           </h1>
-          <h2 className="text-xl md:text-2xl lg:text-3xl text-orange-400 mb-8 font-semibold animate-fade-in drop-shadow-lg">
+          <h2 className="text-xl md:text-2xl lg:text-3xl text-primary mb-8 font-semibold animate-fade-in drop-shadow-lg">
             {t.hero.subtitle}
           </h2>
           <p className="text-lg text-gray-100 mb-12 max-w-2xl mx-auto animate-fade-in drop-shadow-md">
@@ -43,7 +43,7 @@ const Hero = () => {
             <Button
               onClick={() => scrollToSection("servicos")}
               size="lg"
-              className="bg-orange-500 hover:bg-orange-600 text-white shadow-lg"
+              className="bg-primary hover:bg-primary/90 text-white shadow-lg"
             >
               {t.hero.servicesBtn}
             </Button>
@@ -51,7 +51,7 @@ const Hero = () => {
               onClick={() => scrollToSection("contato")}
               size="lg"
               variant="outline"
-              className="border-2 border-white text-white hover:bg-white/10 hover:border-orange-400 shadow-lg"
+              className="border-2 border-white text-white hover:bg-white/10 hover:border-primary shadow-lg"
             >
               {t.hero.contactBtn}
             </Button>
