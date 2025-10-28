@@ -113,7 +113,7 @@ export const pt = {
     phone: "Telefone",
     email: "E-mail",
     address: "Endereço",
-    addressText: "São Paulo, SP - Brasil",
+    addressText: "Rua Bela Cintra, 746, sala 2 - Consolação, São Paulo - SP, 01415-001",
     hours: "Horário",
     hoursText: "Seg - Sex: 9h às 18h",
     ctaTitle: "Fale conosco pelo WhatsApp",

@@ -4,7 +4,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 const Contact = () => {
   const { t } = useLanguage();
-  const whatsappNumber = "5511258976005";
+  const whatsappNumber = "5511943219969";
   const whatsappMessage = encodeURIComponent(t.whatsapp.message);
 
   return (
@@ -30,12 +30,20 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">{t.contact.phone}</h3>
-                    <a
-                      href="tel:+551125897600"
-                      className="text-muted-foreground hover:text-primary transition-colors"
-                    >
-                      (11) 2589-7600
-                    </a>
+                    <div className="space-y-1">
+                      <a
+                        href="tel:+5511943219969"
+                        className="text-muted-foreground hover:text-primary transition-colors block"
+                      >
+                        +55 11 94321-9969
+                      </a>
+                      <a
+                        href="tel:+5511932432464"
+                        className="text-muted-foreground hover:text-primary transition-colors block"
+                      >
+                        +55 11 93243-2464
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -48,10 +56,10 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-foreground mb-1">{t.contact.email}</h3>
                     <a
-                      href="mailto:leonardo@globalkey.com.br"
+                      href="mailto:zitaconsultoriainternacional@gmail.com"
                       className="text-muted-foreground hover:text-primary transition-colors break-all"
                     >
-                      leonardo@globalkey.com.br
+                      zitaconsultoriainternacional@gmail.com
                     </a>
                   </div>
                 </div>
