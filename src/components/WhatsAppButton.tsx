@@ -3,7 +3,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 const WhatsAppButton = () => {
   const { t } = useLanguage();
-  const whatsappNumber = "5511943219969";
+  const whatsappNumber = "551125897600";
   const whatsappMessage = encodeURIComponent(t.whatsapp.message);
 
   return (

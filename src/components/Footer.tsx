@@ -47,20 +47,16 @@ const Footer = () => {
             <div className="space-y-2 sm:space-y-3">
               <div className="flex items-start gap-2">
                 <Phone className="w-5 h-5 mt-0.5 opacity-80" />
-                <div>
-                  <p className="text-sm opacity-90">+55 11 94321-9969</p>
-                  <p className="text-sm opacity-90">+55 11 93243-2464</p>
-                </div>
+                <p className="text-sm opacity-90">(11) 2589-7600</p>
               </div>
               <div className="flex items-start gap-2">
                 <Mail className="w-5 h-5 mt-0.5 opacity-80" />
-                <p className="text-sm opacity-90">zitaconsultoriainternacional@gmail.com</p>
+                <p className="text-sm opacity-90">leonardo@globalkey.com.br</p>
               </div>
               <div className="flex items-start gap-2">
                 <MapPin className="w-5 h-5 mt-0.5 opacity-80" />
                 <p className="text-sm opacity-90">
-                  Rua Bela Cintra, 746, sala 2 - Consolação<br />
-                  São Paulo - SP, 01415-001
+                  Rua Dr. Albuquerque Lins, 503, CJ 113
                 </p>
               </div>
             </div>

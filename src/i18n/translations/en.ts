@@ -113,7 +113,7 @@ export const en = {
     phone: "Phone",
     email: "Email",
     address: "Address",
-    addressText: "Rua Bela Cintra, 746, sala 2 - Consolação, São Paulo - SP, 01415-001",
+    addressText: "Rua Dr. Albuquerque Lins, 503, CJ 113",
     hours: "Hours",
     hoursText: "Mon - Fri: 9am to 6pm",
     ctaTitle: "Contact us via WhatsApp",
@@ -122,7 +122,7 @@ export const en = {
     followTitle: "Follow us",
     followDescription: "Keep up with our news",
     company: "Global Key Comercio e Serviços LTDA",
-    cnpj: "CNPJ: 11.104.845/0001-90",
+    cnpj: "CNPJ: 09.310.556/0001-59",
   },
 
   // Gallery
