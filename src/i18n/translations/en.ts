@@ -98,12 +98,12 @@ export const en = {
   values: {
     title: "Our values",
     missionTitle: "Mission",
-    missionText: "We are a global organization seeking to offer exceptional products and services, in an uncomplicated, agile and modern way, with the purpose of creating strong and lasting bonds with our customers, suppliers and collaborators.",
+    missionText: "We are a global organization seeking to offer exceptional products and services, in an uncomplicated, agile and modern way, with the purpose of creating strong and lasting bonds with our customers, suppliers and partners.",
     visionTitle: "Vision",
     visionText: "To be a reference in the commercialization of national or imported products, as well as in the provision of services in Brazil or abroad.",
     valuesTitle: "Values",
     value1: "Respect the individual, regardless of their characteristics",
-    value2: "Seek to exceed the expectations of our customers, suppliers and collaborators",
+    value2: "Seek to exceed the expectations of our customers, suppliers and partners",
   },
 
   // Contact
