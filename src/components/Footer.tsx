@@ -1,5 +1,6 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import { MapPin, Phone, Mail } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const { t } = useLanguage();
@@ -10,6 +11,7 @@ const Footer = () => {
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-6 sm:mb-8">
           {/* Company Info */}
           <div className="sm:col-span-2 md:col-span-1">
+            <img src={logo} alt="Global Key" className="h-12 sm:h-14 mb-4" />
             <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4">{t.contact.company}</h3>
             <p className="text-xs sm:text-sm opacity-90 mb-3 sm:mb-4">
               {t.footer.description}
