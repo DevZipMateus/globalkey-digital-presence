@@ -45,53 +45,58 @@ export const en = {
   services: {
     title: "Our services",
     description: "Complete solutions in foreign trade and specialized products",
-    tab1: "International consulting",
+    tab1: "Services",
     tab2: "Products",
     
     // Consulting
-    consultingTitle: "Complete import and export consulting",
-    consultingIntro: "We offer complete support for your foreign trade operation, from planning to final delivery.",
+    consultingTitle: "Import and Export Services",
+    consultingIntro: "Brazil is known for being complex and expensive from a tax and bureaucratic standpoint. Doing business with other cultures, time zones, and procedures is not simple either. Navigating these waters requires experience, attention, and a good understanding of each step of the process.\n\nGlobal Key offers a complete solution in managing your import and export processes, with monitoring from origin to final delivery.",
     
-    planningTitle: "Planning",
-    planning1: "Economic feasibility analysis",
-    planning2: "Market and supplier research",
-    planning3: "Product tax classification",
-    planning4: "Cost and tax calculation",
+    planningTitle: "Main activities",
+    planning1: "Supplier search and evaluation of reliable manufacturers",
+    planning2: "Commercial negotiation and intermediation",
+    planning3: "Prior tax analysis and tax classification (NCM)",
+    planning4: "International correspondence (Portuguese, English and Spanish)",
+    planning5: "Foreign exchange closing and international financial operations",
     
-    operationalTitle: "Operational",
-    operational1: "Negotiation with international suppliers",
-    operational2: "Documentation and license management",
-    operational3: "Shipment tracking",
-    operational4: "Customs clearance",
-    operational5: "Integrated logistics",
+    operationalTitle: "Operational management",
+    operational1: "Complete customs clearance",
+    operational2: "Shipment organization and logistics management",
+    operational3: "Documentary analysis and preparation (Invoice, Packing List, BL, AWB, DI, DUE, LI)",
+    operational4: "Issuance of import and export invoices",
+    operational5: "Technical monitoring from registration to cargo release",
     
-    languagesTitle: "Languages",
-    languagesText: "Specialized service in Portuguese, English and Spanish",
+    languagesTitle: "Differentials",
+    languagesText: "All this with service in Portuguese, English and Spanish, offering security, transparency and efficiency at every stage of the process.",
     
     // Products
     productsTitle: "Premium products for speaker repairs",
     productsIntro: "Complete line of high-quality materials for the professional market.",
     
-    product1Name: "Polyimide Film (Kapton)",
-    product1Specs: "Thicknesses: 25µm, 50µm, 75µm and 125µm",
-    product1Desc: "High-temperature polyimide film, ideal for voice coils and thermal insulation in professional speakers.",
+    product1Name: "Polyimide Film (Kapton® equivalent)",
+    product1Specs: "Thicknesses: 0.075mm / 0.10mm / 0.125mm / 0.15mm / 0.18mm • Height: 520mm",
+    product1Desc: "Used in the manufacture and repair of speaker coils due to its excellent thermal resistance, dimensional stability and superior electrical insulation. Withstands high temperatures without deforming (up to 400°C at peaks). High thermal resistance, dimensional stability and smooth uniform surface.",
     
-    product2Name: "Phenolic Fiber",
-    product2Specs: "Available in various thicknesses",
-    product2Desc: "Phenolic fiber with high mechanical and thermal resistance, perfect for cone structures and applications requiring dimensional stability.",
+    product2Name: "Polyimide Film with Adhesive (Kapton® SV equivalent)",
+    product2Specs: "Thicknesses: 0.075mm / 0.10mm / 0.125mm / 0.15mm / 0.18mm • Height: 270mm",
+    product2Desc: "Combines the thermal performance of polyimide with the practicality of a high-strength adhesive. Ideal for applications requiring simultaneous insulation and fixation, reducing production steps. High-temperature resistant adhesive and excellent adhesion.",
     
-    product3Name: "CCAW Wire (Copper Clad Aluminum Wire)",
-    product3Specs: "Various diameters available",
-    product3Desc: "Copper-clad aluminum wire, offering excellent weight/performance ratio for speaker voice coils.",
+    product3Name: "Phenolic Fiber",
+    product3Specs: "Thickness: 0.15mm • Colors: Black, Orange and Brown",
+    product3Desc: "High rigidity and thermal resistance materials, widely used as support and reinforcement in coils. Recognized for superior quality, considered the best in Brazil. High thermal and mechanical resistance, with clean cut and no burrs.",
     
-    product4Name: "Finishing Papers",
-    product4Specs: "Various weights",
-    product4Desc: "Special papers for cone finishing and repair, with specific treatment for resistance and durability.",
+    product4Name: "CCAW Wire (Copper Clad Aluminum Wire)",
+    product4Specs: "Composition: 60% Aluminum / 40% Copper • Gauges: 21 AWG to 30 AWG • Temperature: 200°C",
+    product4Desc: "Combines lightness and high electrical conductivity, ideal for speaker coils that require thermal performance and weight reduction. Available in 2kg and 7kg rolls. Light, highly conductive and with uniform coils.",
+    
+    product5Name: "Finishing Papers",
+    product5Specs: "White paper (0.13mm) • Black kraft paper (0.175mm)",
+    product5Desc: "Technical papers used in the finishing and reinforcement of speaker coils, offering thermal and professional visual insulation. Provide excellent rigidity and adhesion. Thermal and structural resistance with uniform surface.",
     
     comingSoonTitle: "Coming soon: Cones and Repairs",
-    comingSoonDesc: "We are expanding our product line to include complete cones and professional repair kits.",
+    comingSoonDesc: "We are expanding our product line with complete cones and professional repair kits for speakers, maintaining the same quality and precision standard that defines our brand.",
     
-    disclaimer: "All products are technical equivalents. Mentioned brands are property of their respective owners and are cited only for technical equivalence reference.",
+    disclaimer: "Kapton® is a registered trademark of DuPont. The products described above are equivalent materials, not manufactured by or affiliated with DuPont.",
   },
 
   // Values

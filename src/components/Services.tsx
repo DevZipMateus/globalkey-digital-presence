@@ -28,13 +28,13 @@ const Services = () => {
 
             <TabsContent value="assessoria" className="space-y-6 sm:space-y-8">
               <div className="bg-white rounded-xl md:rounded-2xl p-4 sm:p-6 md:p-8 shadow-soft">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center">
+                <div className="flex items-start gap-4 mb-6">
+                  <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                     <Ship className="w-8 h-8 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-foreground">{t.services.consultingTitle}</h3>
-                    <p className="text-muted-foreground">{t.services.consultingIntro}</p>
+                    <h3 className="text-2xl font-bold text-foreground mb-3">{t.services.consultingTitle}</h3>
+                    <p className="text-muted-foreground whitespace-pre-line">{t.services.consultingIntro}</p>
                   </div>
                 </div>
 
@@ -52,6 +52,7 @@ const Services = () => {
                         <li>✓ {t.services.planning2}</li>
                         <li>✓ {t.services.planning3}</li>
                         <li>✓ {t.services.planning4}</li>
+                        <li>✓ {t.services.planning5}</li>
                       </ul>
                     </CardContent>
                   </Card>
@@ -134,6 +135,18 @@ const Services = () => {
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
                     {t.services.product4Desc}
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle>{t.services.product5Name}</CardTitle>
+                  <CardDescription>{t.services.product5Specs}</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground">
+                    {t.services.product5Desc}
                   </p>
                 </CardContent>
               </Card>

@@ -45,53 +45,58 @@ export const es = {
   services: {
     title: "Nuestros servicios",
     description: "Soluciones completas en comercio exterior y productos especializados",
-    tab1: "Asesoría internacional",
+    tab1: "Servicios",
     tab2: "Productos",
     
     // Consulting
-    consultingTitle: "Asesoría completa en importación y exportación",
-    consultingIntro: "Ofrecemos soporte completo para su operación de comercio exterior, desde la planificación hasta la entrega final.",
+    consultingTitle: "Servicios de Importación y Exportación",
+    consultingIntro: "Brasil es conocido por ser complejo y costoso desde el punto de vista tributario y burocrático. Hacer negocios con otras culturas, husos horarios y procedimientos tampoco es simple. Navegar por estas aguas requiere experiencia, atención y una buena comprensión de cada etapa del proceso.\n\nGlobal Key ofrece una solución completa en la gestión de sus procesos de importación y exportación, con seguimiento desde el origen hasta la entrega final.",
     
-    planningTitle: "Planificación",
-    planning1: "Análisis de viabilidad económica",
-    planning2: "Estudio de mercado y proveedores",
-    planning3: "Clasificación fiscal de productos",
-    planning4: "Cálculo de costos e impuestos",
+    planningTitle: "Actividades principales",
+    planning1: "Búsqueda de proveedores y evaluación de fabricantes confiables",
+    planning2: "Negociación e intermediación comercial",
+    planning3: "Análisis tributario previo y clasificación fiscal (NCM)",
+    planning4: "Correspondencia internacional (portugués, inglés y español)",
+    planning5: "Cierre de cambio y operaciones financieras internacionales",
     
-    operationalTitle: "Operacional",
-    operational1: "Negociación con proveedores internacionales",
-    operational2: "Gestión de documentación y licencias",
-    operational3: "Seguimiento de embarques",
-    operational4: "Despacho aduanero",
-    operational5: "Logística integrada",
+    operationalTitle: "Gestión operacional",
+    operational1: "Despacho aduanero completo",
+    operational2: "Organización de embarque y gestión logística",
+    operational3: "Análisis y elaboración documental (Invoice, Packing List, BL, AWB, DI, DUE, LI)",
+    operational4: "Emisión de facturas de importación y exportación",
+    operational5: "Seguimiento técnico desde el registro hasta la liberación de la carga",
     
-    languagesTitle: "Idiomas",
-    languagesText: "Atención especializada en portugués, inglés y español",
+    languagesTitle: "Diferenciales",
+    languagesText: "Todo esto con atención en portugués, inglés y español, ofreciendo seguridad, transparencia y eficiencia en cada etapa del proceso.",
     
     // Products
     productsTitle: "Productos premium para reparaciones de altavoces",
     productsIntro: "Línea completa de materiales de alta calidad para el mercado profesional.",
     
-    product1Name: "Polyimide Film (Kapton)",
-    product1Specs: "Espesores: 25µm, 50µm, 75µm y 125µm",
-    product1Desc: "Película de poliimida de alta temperatura, ideal para bobinas de voz y aislamiento térmico en altavoces profesionales.",
+    product1Name: "Película de Poliimida (equivalente a Kapton®)",
+    product1Specs: "Espesores: 0,075mm / 0,10mm / 0,125mm / 0,15mm / 0,18mm • Altura: 520mm",
+    product1Desc: "Utilizada en la fabricación y reparación de bobinas de altavoces debido a su excelente resistencia térmica, estabilidad dimensional y aislamiento eléctrico superior. Soporta altas temperaturas sin deformarse (hasta 400°C en picos). Alta resistencia térmica, estabilidad dimensional y superficie lisa uniforme.",
     
-    product2Name: "Phenolic Fiber",
-    product2Specs: "Disponible en varios espesores",
-    product2Desc: "Fibra fenólica de alta resistencia mecánica y térmica, perfecta para estructuras de cono y aplicaciones que requieren estabilidad dimensional.",
+    product2Name: "Película de Poliimida con Adhesivo (equivalente a Kapton® SV)",
+    product2Specs: "Espesores: 0,075mm / 0,10mm / 0,125mm / 0,15mm / 0,18mm • Altura: 270mm",
+    product2Desc: "Combina el rendimiento térmico de la poliimida con la practicidad de un adhesivo de alta resistencia. Ideal para aplicaciones que requieren aislamiento y fijación simultánea, reduciendo etapas en la producción. Adhesivo resistente a altas temperaturas y excelente adherencia.",
     
-    product3Name: "CCAW Wire (Copper Clad Aluminum Wire)",
-    product3Specs: "Varios diámetros disponibles",
-    product3Desc: "Alambre de aluminio revestido con cobre, ofreciendo excelente relación peso/rendimiento para bobinas de voz de altavoces.",
+    product3Name: "Fibra Fenólica",
+    product3Specs: "Espesor: 0,15mm • Colores: Negra, Naranja y Marrón",
+    product3Desc: "Materiales de alta rigidez y resistencia térmica, ampliamente utilizados como soporte y refuerzo en bobinas. Reconocidas por su calidad superior, consideradas las mejores de Brasil. Alta resistencia térmica y mecánica, con corte limpio y sin rebabas.",
     
-    product4Name: "Finishing Papers",
-    product4Specs: "Varios gramajes",
-    product4Desc: "Papeles especiales para acabado y reparación de conos, con tratamiento específico para resistencia y durabilidad.",
+    product4Name: "Alambre CCAW (Alambre de Aluminio Revestido de Cobre)",
+    product4Specs: "Composición: 60% Aluminio / 40% Cobre • Calibres: 21 AWG a 30 AWG • Temperatura: 200°C",
+    product4Desc: "Combina ligereza y alta conductividad eléctrica, siendo ideal para bobinas de altavoces que requieren rendimiento térmico y reducción de peso. Disponible en rollos de 2kg y 7kg. Ligero, altamente conductivo y con bobinas uniformes.",
+    
+    product5Name: "Papeles de Acabado",
+    product5Specs: "Papel blanco (0,13mm) • Papel kraft negro (0,175mm)",
+    product5Desc: "Papeles técnicos utilizados en el acabado y refuerzo de bobinas de altavoces, ofreciendo aislamiento térmico y visual profesional. Proporcionan excelente rigidez y adherencia. Resistencia térmica y estructural con superficie uniforme.",
     
     comingSoonTitle: "Próximamente: Conos y Reparaciones",
-    comingSoonDesc: "Estamos expandiendo nuestra línea de productos para incluir conos completos y kits de reparación profesionales.",
+    comingSoonDesc: "Estamos ampliando nuestra línea de productos con conos y kits de reparación completos para altavoces, manteniendo el mismo estándar de calidad y precisión que define nuestra marca.",
     
-    disclaimer: "Todos los productos son equivalentes técnicos. Las marcas mencionadas son propiedad de sus respectivos dueños y se citan solo para referencia de equivalencia técnica.",
+    disclaimer: "Kapton® es una marca registrada de DuPont. Los productos descritos anteriormente son materiales equivalentes, no fabricados ni afiliados a DuPont.",
   },
 
   // Values
