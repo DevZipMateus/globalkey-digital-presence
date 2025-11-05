@@ -28,7 +28,7 @@ const Services = () => {
 
             <TabsContent value="assessoria" className="space-y-6 sm:space-y-8">
               <div className="bg-white rounded-xl md:rounded-2xl p-4 sm:p-6 md:p-8 shadow-soft">
-                <div className="flex items-start gap-4 mb-6">
+                <div className="flex items-start gap-4 mb-8">
                   <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                     <Ship className="w-8 h-8 text-primary" />
                   </div>
@@ -38,46 +38,89 @@ const Services = () => {
                   </div>
                 </div>
 
-                <div className="mb-6">
-                  <h4 className="text-lg font-semibold text-foreground mb-4">{t.services.servicesTitle}</h4>
-                  <div className="space-y-4">
-                    <div className="border-l-4 border-primary pl-4">
-                      <h5 className="font-semibold text-foreground mb-1">{t.services.service1Title}</h5>
+                <h4 className="text-lg font-semibold text-foreground mb-6">{t.services.servicesTitle}</h4>
+                
+                <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
+                  <Card className="hover:shadow-medium transition-all animate-fade-in border-l-4 border-l-primary">
+                    <CardHeader>
+                      <CardTitle className="text-lg">{t.services.service1Title}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
                       <p className="text-sm text-muted-foreground">{t.services.service1Desc}</p>
-                    </div>
-                    <div className="border-l-4 border-primary pl-4">
-                      <h5 className="font-semibold text-foreground mb-1">{t.services.service2Title}</h5>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="hover:shadow-medium transition-all animate-fade-in border-l-4 border-l-primary">
+                    <CardHeader>
+                      <CardTitle className="text-lg">{t.services.service2Title}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
                       <p className="text-sm text-muted-foreground">{t.services.service2Desc}</p>
-                    </div>
-                    <div className="border-l-4 border-primary pl-4">
-                      <h5 className="font-semibold text-foreground mb-1">{t.services.service3Title}</h5>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="hover:shadow-medium transition-all animate-fade-in border-l-4 border-l-primary">
+                    <CardHeader>
+                      <CardTitle className="text-lg">{t.services.service3Title}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
                       <p className="text-sm text-muted-foreground">{t.services.service3Desc}</p>
-                    </div>
-                    <div className="border-l-4 border-primary pl-4">
-                      <h5 className="font-semibold text-foreground mb-1">{t.services.service4Title}</h5>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="hover:shadow-medium transition-all animate-fade-in border-l-4 border-l-primary">
+                    <CardHeader>
+                      <CardTitle className="text-lg">{t.services.service4Title}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
                       <p className="text-sm text-muted-foreground">{t.services.service4Desc}</p>
-                    </div>
-                    <div className="border-l-4 border-primary pl-4">
-                      <h5 className="font-semibold text-foreground mb-1">{t.services.service5Title}</h5>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="hover:shadow-medium transition-all animate-fade-in border-l-4 border-l-primary">
+                    <CardHeader>
+                      <CardTitle className="text-lg">{t.services.service5Title}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
                       <p className="text-sm text-muted-foreground">{t.services.service5Desc}</p>
-                    </div>
-                    <div className="border-l-4 border-primary pl-4">
-                      <h5 className="font-semibold text-foreground mb-1">{t.services.service6Title}</h5>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="hover:shadow-medium transition-all animate-fade-in border-l-4 border-l-primary">
+                    <CardHeader>
+                      <CardTitle className="text-lg">{t.services.service6Title}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
                       <p className="text-sm text-muted-foreground">{t.services.service6Desc}</p>
-                    </div>
-                    <div className="border-l-4 border-primary pl-4">
-                      <h5 className="font-semibold text-foreground mb-1">{t.services.service7Title}</h5>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="hover:shadow-medium transition-all animate-fade-in border-l-4 border-l-primary">
+                    <CardHeader>
+                      <CardTitle className="text-lg">{t.services.service7Title}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
                       <p className="text-sm text-muted-foreground">{t.services.service7Desc}</p>
-                    </div>
-                    <div className="border-l-4 border-primary pl-4">
-                      <h5 className="font-semibold text-foreground mb-1">{t.services.service8Title}</h5>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="hover:shadow-medium transition-all animate-fade-in border-l-4 border-l-primary">
+                    <CardHeader>
+                      <CardTitle className="text-lg">{t.services.service8Title}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
                       <p className="text-sm text-muted-foreground">{t.services.service8Desc}</p>
-                    </div>
-                    <div className="border-l-4 border-primary pl-4">
-                      <h5 className="font-semibold text-foreground mb-1">{t.services.service9Title}</h5>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="hover:shadow-medium transition-all animate-fade-in border-l-4 border-l-primary">
+                    <CardHeader>
+                      <CardTitle className="text-lg">{t.services.service9Title}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
                       <p className="text-sm text-muted-foreground">{t.services.service9Desc}</p>
-                    </div>
-                  </div>
+                    </CardContent>
+                  </Card>
                 </div>
               </div>
             </TabsContent>
