@@ -201,8 +201,18 @@ export const es = {
     
     phenolicFiber: {
       name: "Fibra Fenólica",
-      specs: "Espesor: 0,15mm • Colores: Negra, Naranja y Marrón",
-      description: "Materiales de alta rigidez y resistencia térmica, ampliamente utilizados como soporte y refuerzo en bobinas. Reconocidas por su calidad superior, consideradas las mejores de Brasil. Alta resistencia térmica y mecánica, con corte limpio y sin rebabas."
+      specs: "Espesor: 0,15 mm • Colores disponibles: Negro, Naranja y Marrón",
+      description: "Las fibras fenólicas son materiales de alta rigidez y resistencia térmica, ampliamente utilizadas como soporte y refuerzo en bobinas de altavoces. Reconocidas por su calidad superior, nuestras fibras son consideradas las mejores de Brasil, ofreciendo corte preciso y acabado perfecto.",
+      applications: [
+        "Soporte estructural de bobinas",
+        "Aislamiento mecánico y térmico",
+        "Refuerzo en reparaciones y montajes"
+      ],
+      features: [
+        "Alta resistencia térmica y mecánica",
+        "Corte limpio y sin rebabas",
+        "Calidad premium nacional"
+      ]
     },
     
     ccaWire: {

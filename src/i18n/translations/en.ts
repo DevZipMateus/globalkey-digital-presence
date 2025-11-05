@@ -201,8 +201,18 @@ export const en = {
     
     phenolicFiber: {
       name: "Phenolic Fiber",
-      specs: "Thickness: 0.15mm • Colors: Black, Orange and Brown",
-      description: "High rigidity and thermal resistance materials, widely used as support and reinforcement in coils. Recognized for superior quality, considered the best in Brazil. High thermal and mechanical resistance, with clean cut and no burrs."
+      specs: "Thickness: 0.15 mm • Available colors: Black, Orange, and Brown",
+      description: "Phenolic fibers are high-rigidity and thermal resistance materials, widely used as support and reinforcement in speaker coils. Recognized for superior quality, our fibers are considered the best in Brazil, offering precise cutting and perfect finishing.",
+      applications: [
+        "Structural support for coils",
+        "Mechanical and thermal insulation",
+        "Reinforcement in repairs and assemblies"
+      ],
+      features: [
+        "High thermal and mechanical resistance",
+        "Clean cut without burrs",
+        "Premium national quality"
+      ]
     },
     
     ccaWire: {

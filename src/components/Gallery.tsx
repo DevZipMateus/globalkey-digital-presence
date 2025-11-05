@@ -44,6 +44,8 @@ const Gallery = () => {
       name: t.gallery.phenolicFiber.name,
       specs: t.gallery.phenolicFiber.specs,
       description: t.gallery.phenolicFiber.description,
+      applications: t.gallery.phenolicFiber.applications,
+      features: t.gallery.phenolicFiber.features,
       images: [fibraLaranja, fibraMarrom, fibraPreta],
     },
     {
