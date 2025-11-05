@@ -13,6 +13,8 @@ import fibraLaranja from "@/assets/fibra_laranja.jpg";
 import fibraMarrom from "@/assets/fibra_marrom.jpg";
 import fibraPreta from "@/assets/fibra_preta.jpg";
 import fioCca from "@/assets/fio_cca.jpg";
+import papelBranco from "@/assets/papel_branco.jpg";
+import papelKraft from "@/assets/papel_kraft.jpg";
 
 const Gallery = () => {
   const { t } = useLanguage();
@@ -55,6 +57,14 @@ const Gallery = () => {
       applications: t.gallery.ccaWire.applications,
       features: t.gallery.ccaWire.features,
       images: [fioCca],
+    },
+    {
+      name: t.gallery.finishingPapers.name,
+      specs: t.gallery.finishingPapers.specs,
+      description: t.gallery.finishingPapers.description,
+      applications: t.gallery.finishingPapers.applications,
+      features: t.gallery.finishingPapers.features,
+      images: [papelBranco, papelKraft],
     },
   ];
 

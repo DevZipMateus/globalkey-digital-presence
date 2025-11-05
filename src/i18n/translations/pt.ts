@@ -229,6 +229,22 @@ export const pt = {
         "Resistência térmica de até 200 °C",
         "Bobinas uniformes e embaladas com cuidado"
       ]
+    },
+    
+    finishingPapers: {
+      name: "Papéis de Acabamento",
+      specs: "Papel branco (0,13 mm) • Papel kraft preto (0,175 mm)",
+      description: "Papéis técnicos utilizados no acabamento e reforço de bobinas de alto-falantes, oferecendo isolamento térmico e visual profissional. Proporcionam excelente rigidez e aderência, ideais para processos de colagem e acabamento.",
+      applications: [
+        "Reforço e acabamento de bobinas",
+        "Isolamento e proteção de componentes",
+        "Aplicações estéticas e estruturais"
+      ],
+      features: [
+        "Resistência térmica e estrutural",
+        "Superfície uniforme e corte preciso",
+        "Excelente custo-benefício"
+      ]
     }
   },
 

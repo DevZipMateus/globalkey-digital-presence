@@ -229,6 +229,22 @@ export const en = {
         "Thermal resistance up to 200 °C",
         "Uniform coils carefully packaged"
       ]
+    },
+    
+    finishingPapers: {
+      name: "Finishing Papers",
+      specs: "White paper (0.13 mm) • Black kraft paper (0.175 mm)",
+      description: "Technical papers used for finishing and reinforcing speaker coils, providing thermal insulation and professional visual appearance. They offer excellent rigidity and adhesion, ideal for bonding and finishing processes.",
+      applications: [
+        "Coil reinforcement and finishing",
+        "Insulation and component protection",
+        "Aesthetic and structural applications"
+      ],
+      features: [
+        "Thermal and structural resistance",
+        "Uniform surface and precise cutting",
+        "Excellent cost-effectiveness"
+      ]
     }
   },
 
