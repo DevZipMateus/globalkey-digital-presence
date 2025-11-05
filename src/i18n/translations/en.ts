@@ -155,16 +155,49 @@ export const en = {
   // Gallery
   gallery: {
     title: "Product Gallery",
-    description: "Discover some of our high-quality products for the electrical industry.",
-    product1: "Orange Fiber 0.15mm",
-    product2: "Brown Fiber",
-    product3: "Black Fiber",
-    product4: "Polyimide Film Black High Performance",
-    product5: "Polyimide Film without Adhesive",
-    product6: "Polyimide Film without Adhesive",
-    product7: "Polyimide Film with Adhesive",
-    product8: "Polyimide Film with Adhesive",
-    product9: "CCA Wire",
+    description: "Discover our high-quality products with detailed technical specifications.",
+    applicationsTitle: "Applications:",
+    featuresTitle: "Key Features:",
+    
+    polimidaNoAdhesive: {
+      name: "Polyimide Film (equivalent to Kapton®)",
+      specs: "Available thicknesses: 0.075 mm / 0.10 mm / 0.125 mm / 0.15 mm / 0.18 mm • Height: 520 mm",
+      description: "Polyimide Film (widely known in the market as Kapton®) is used in the manufacture and repair of speaker coils due to its excellent thermal resistance, dimensional stability and superior electrical insulation. Supports high temperatures without deforming or losing electrical properties, ensuring durability and reliable performance.",
+      applications: [
+        "Speaker coil insulation",
+        "Electric motors and transformers",
+        "Electronic and thermal components"
+      ],
+      features: [
+        "High thermal resistance (up to 400 °C peak)",
+        "Excellent dimensional stability",
+        "Smooth and uniform surface",
+        "Industrial grade raw material"
+      ]
+    },
+    
+    polimidaAdhesive: {
+      name: "Polyimide Film with Adhesive (equivalent to Kapton® SV)",
+      specs: "Thicknesses: 0.075mm / 0.10mm / 0.125mm / 0.15mm / 0.18mm • Height: 270mm",
+      description: "Combines the thermal performance of polyimide with the practicality of a high-strength adhesive. Ideal for applications requiring simultaneous insulation and fixation, reducing production steps. High-temperature resistant adhesive with excellent adhesion."
+    },
+    
+    polimidaBlack: {
+      name: "Polyimide Film Black High Performance",
+      description: "High-performance polyimide film with black finish, ideal for applications requiring maximum thermal resistance and professional aesthetics."
+    },
+    
+    phenolicFiber: {
+      name: "Phenolic Fiber",
+      specs: "Thickness: 0.15mm • Colors: Black, Orange and Brown",
+      description: "High rigidity and thermal resistance materials, widely used as support and reinforcement in coils. Recognized for superior quality, considered the best in Brazil. High thermal and mechanical resistance, with clean cut and no burrs."
+    },
+    
+    ccaWire: {
+      name: "CCAW Wire (Copper Clad Aluminum Wire)",
+      specs: "Composition: 60% Aluminum / 40% Copper • Gauges: 21 AWG to 30 AWG • Temperature: 200°C",
+      description: "Combines lightness and high electrical conductivity, ideal for speaker coils that require thermal performance and weight reduction. Available in 2kg and 7kg rolls. Lightweight, highly conductive with uniform coils."
+    }
   },
 
   // WhatsApp

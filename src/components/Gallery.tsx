@@ -1,27 +1,51 @@
 import { useLanguage } from "@/contexts/LanguageContext";
-import fibraLaranja from "@/assets/fibra_laranja.jpg";
-import fibraMarrom from "@/assets/fibra_marrom.jpg";
-import fibraPreta from "@/assets/fibra_preta.jpg";
-import filmePolimidaBlack from "@/assets/filme_polimida_black.jpg";
+import { Check } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import filmePolimidaSemAdesivo from "@/assets/filme_polimida_sem_adesivo.jpg";
 import filmePolimidaSemAdesivo2 from "@/assets/filme_polimida_sem_adesivo_2.jpg";
 import filmePolimidaAdesivo from "@/assets/filme_polimida_adesivo.jpg";
 import filmePolimidaAdesivo2 from "@/assets/filme_polimida_adesivo_2.jpg";
+import filmePolimidaBlack from "@/assets/filme_polimida_black.jpg";
+import fibraLaranja from "@/assets/fibra_laranja.jpg";
+import fibraMarrom from "@/assets/fibra_marrom.jpg";
+import fibraPreta from "@/assets/fibra_preta.jpg";
 import fioCca from "@/assets/fio_cca.jpg";
 
 const Gallery = () => {
   const { t } = useLanguage();
 
-  const images = [
-    { src: fibraLaranja, alt: t.gallery.product1, name: t.gallery.product1 },
-    { src: fibraMarrom, alt: t.gallery.product2, name: t.gallery.product2 },
-    { src: fibraPreta, alt: t.gallery.product3, name: t.gallery.product3 },
-    { src: filmePolimidaBlack, alt: t.gallery.product4, name: t.gallery.product4 },
-    { src: filmePolimidaSemAdesivo, alt: t.gallery.product5, name: t.gallery.product5 },
-    { src: filmePolimidaSemAdesivo2, alt: t.gallery.product6, name: t.gallery.product6 },
-    { src: filmePolimidaAdesivo, alt: t.gallery.product7, name: t.gallery.product7 },
-    { src: filmePolimidaAdesivo2, alt: t.gallery.product8, name: t.gallery.product8 },
-    { src: fioCca, alt: t.gallery.product9, name: t.gallery.product9 },
+  const products = [
+    {
+      name: t.gallery.polimidaNoAdhesive.name,
+      specs: t.gallery.polimidaNoAdhesive.specs,
+      description: t.gallery.polimidaNoAdhesive.description,
+      applications: t.gallery.polimidaNoAdhesive.applications,
+      features: t.gallery.polimidaNoAdhesive.features,
+      images: [filmePolimidaSemAdesivo, filmePolimidaSemAdesivo2],
+    },
+    {
+      name: t.gallery.polimidaAdhesive.name,
+      specs: t.gallery.polimidaAdhesive.specs,
+      description: t.gallery.polimidaAdhesive.description,
+      images: [filmePolimidaAdesivo, filmePolimidaAdesivo2],
+    },
+    {
+      name: t.gallery.polimidaBlack.name,
+      description: t.gallery.polimidaBlack.description,
+      images: [filmePolimidaBlack],
+    },
+    {
+      name: t.gallery.phenolicFiber.name,
+      specs: t.gallery.phenolicFiber.specs,
+      description: t.gallery.phenolicFiber.description,
+      images: [fibraLaranja, fibraMarrom, fibraPreta],
+    },
+    {
+      name: t.gallery.ccaWire.name,
+      specs: t.gallery.ccaWire.specs,
+      description: t.gallery.ccaWire.description,
+      images: [fioCca],
+    },
   ];
 
   return (
@@ -34,26 +58,79 @@ const Gallery = () => {
           {t.gallery.description}
         </p>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
-          {images.map((image, index) => (
-            <div
-              key={index}
-              className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 bg-card"
-            >
-              <div className="aspect-square overflow-hidden">
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                  loading="lazy"
-                />
-              </div>
-              <div className="p-4 bg-card">
-                <h3 className="text-sm font-semibold text-foreground text-center">
-                  {image.name}
-                </h3>
-              </div>
-            </div>
+        <div className="space-y-12">
+          {products.map((product, index) => (
+            <Card key={index} className="overflow-hidden border-l-4 border-l-primary hover:shadow-medium transition-shadow animate-fade-in">
+              <CardHeader>
+                <CardTitle className="text-xl sm:text-2xl text-foreground">
+                  {product.name}
+                </CardTitle>
+                {product.specs && (
+                  <p className="text-sm text-primary font-medium mt-2">
+                    {product.specs}
+                  </p>
+                )}
+              </CardHeader>
+              <CardContent className="space-y-6">
+                {/* Images */}
+                <div className={`grid gap-4 ${product.images.length > 1 ? 'grid-cols-2' : 'grid-cols-1 max-w-md mx-auto'}`}>
+                  {product.images.map((image, imgIndex) => (
+                    <div
+                      key={imgIndex}
+                      className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                    >
+                      <div className="aspect-square overflow-hidden">
+                        <img
+                          src={image}
+                          alt={`${product.name} ${imgIndex + 1}`}
+                          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Description */}
+                <p className="text-muted-foreground leading-relaxed">
+                  {product.description}
+                </p>
+
+                {/* Applications */}
+                {product.applications && (
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-3">
+                      {t.gallery.applicationsTitle}
+                    </h4>
+                    <ul className="space-y-2">
+                      {product.applications.map((app, appIndex) => (
+                        <li key={appIndex} className="flex items-start gap-2 text-muted-foreground">
+                          <span className="text-primary mt-1">•</span>
+                          <span>{app}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+                {/* Features */}
+                {product.features && (
+                  <div>
+                    <h4 className="font-semibold text-foreground mb-3">
+                      {t.gallery.featuresTitle}
+                    </h4>
+                    <ul className="space-y-2">
+                      {product.features.map((feature, featureIndex) => (
+                        <li key={featureIndex} className="flex items-start gap-2 text-muted-foreground">
+                          <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                          <span>{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </CardContent>
+            </Card>
           ))}
         </div>
       </div>

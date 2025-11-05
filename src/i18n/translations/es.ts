@@ -155,16 +155,49 @@ export const es = {
   // Gallery
   gallery: {
     title: "Galería de Productos",
-    description: "Conozca algunos de nuestros productos de alta calidad para la industria eléctrica.",
-    product1: "Fibra Naranja 0.15mm",
-    product2: "Fibra Marrón",
-    product3: "Fibra Negra",
-    product4: "Película de Poliimida Black High Performance",
-    product5: "Película de Poliimida sin Adhesivo",
-    product6: "Película de Poliimida sin Adhesivo",
-    product7: "Película de Poliimida con Adhesivo",
-    product8: "Película de Poliimida con Adhesivo",
-    product9: "Alambre CCA",
+    description: "Conozca nuestros productos de alta calidad con especificaciones técnicas detalladas.",
+    applicationsTitle: "Aplicaciones:",
+    featuresTitle: "Características destacadas:",
+    
+    polimidaNoAdhesive: {
+      name: "Película de Poliimida (equivalente a Kapton®)",
+      specs: "Espesores disponibles: 0,075 mm / 0,10 mm / 0,125 mm / 0,15 mm / 0,18 mm • Altura: 520 mm",
+      description: "La Película de Poliimida (material ampliamente conocido en el mercado como Kapton®) se utiliza en la fabricación y reparación de bobinas de altavoces debido a su excelente resistencia térmica, estabilidad dimensional y aislamiento eléctrico superior. Soporta altas temperaturas sin deformarse o perder propiedades eléctricas, garantizando durabilidad y rendimiento confiable.",
+      applications: [
+        "Aislamiento de bobinas de altavoces",
+        "Motores eléctricos y transformadores",
+        "Componentes electrónicos y térmicos"
+      ],
+      features: [
+        "Alta resistencia térmica (hasta 400 °C en picos)",
+        "Excelente estabilidad dimensional",
+        "Superficie lisa y uniforme",
+        "Materia prima de grado industrial"
+      ]
+    },
+    
+    polimidaAdhesive: {
+      name: "Película de Poliimida con Adhesivo (equivalente a Kapton® SV)",
+      specs: "Espesores: 0,075mm / 0,10mm / 0,125mm / 0,15mm / 0,18mm • Altura: 270mm",
+      description: "Combina el rendimiento térmico de la poliimida con la practicidad de un adhesivo de alta resistencia. Ideal para aplicaciones que requieren aislamiento y fijación simultánea, reduciendo etapas en la producción. Adhesivo resistente a altas temperaturas y excelente adherencia."
+    },
+    
+    polimidaBlack: {
+      name: "Película de Poliimida Black High Performance",
+      description: "Película de poliimida de alto rendimiento con acabado negro, ideal para aplicaciones que requieren máxima resistencia térmica y estética profesional."
+    },
+    
+    phenolicFiber: {
+      name: "Fibra Fenólica",
+      specs: "Espesor: 0,15mm • Colores: Negra, Naranja y Marrón",
+      description: "Materiales de alta rigidez y resistencia térmica, ampliamente utilizados como soporte y refuerzo en bobinas. Reconocidas por su calidad superior, consideradas las mejores de Brasil. Alta resistencia térmica y mecánica, con corte limpio y sin rebabas."
+    },
+    
+    ccaWire: {
+      name: "Alambre CCAW (Alambre de Aluminio Revestido de Cobre)",
+      specs: "Composición: 60% Aluminio / 40% Cobre • Calibres: 21 AWG a 30 AWG • Temperatura: 200°C",
+      description: "Combina ligereza y alta conductividad eléctrica, siendo ideal para bobinas de altavoces que requieren rendimiento térmico y reducción de peso. Disponible en rollos de 2kg y 7kg. Ligero, altamente conductivo y con bobinas uniformes."
+    }
   },
 
   // WhatsApp

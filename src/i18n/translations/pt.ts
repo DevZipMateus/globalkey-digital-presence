@@ -155,16 +155,49 @@ export const pt = {
   // Gallery
   gallery: {
     title: "Galeria de Produtos",
-    description: "Conheça alguns de nossos produtos de alta qualidade para a indústria elétrica.",
-    product1: "Fibra Laranja 0.15mm",
-    product2: "Fibra Marrom",
-    product3: "Fibra Preta",
-    product4: "Filme de Polimida Black High Performance",
-    product5: "Filme de Polimida sem Adesivo",
-    product6: "Filme de Polimida sem Adesivo",
-    product7: "Filme de Polimida com Adesivo",
-    product8: "Filme de Polimida com Adesivo",
-    product9: "Fio CCA",
+    description: "Conheça nossos produtos de alta qualidade com especificações técnicas detalhadas.",
+    applicationsTitle: "Aplicações:",
+    featuresTitle: "Diferenciais:",
+    
+    polimidaNoAdhesive: {
+      name: "Filme de Polimida (equivalente ao Kapton®)",
+      specs: "Espessuras disponíveis: 0,075 mm / 0,10 mm / 0,125 mm / 0,15 mm / 0,18 mm • Altura: 520 mm",
+      description: "O Filme de Polimida (material amplamente conhecido no mercado como Kapton®) é utilizado na fabricação e reparo de bobinas de alto-falantes devido à sua excelente resistência térmica, estabilidade dimensional e isolamento elétrico superior. Suporta altas temperaturas sem deformar ou perder propriedades elétricas, garantindo durabilidade e desempenho confiável.",
+      applications: [
+        "Isolamento de bobinas de alto-falantes",
+        "Motores elétricos e transformadores",
+        "Componentes eletrônicos e térmicos"
+      ],
+      features: [
+        "Alta resistência térmica (até 400 °C em picos)",
+        "Excelente estabilidade dimensional",
+        "Superfície lisa e uniforme",
+        "Matéria-prima de grau industrial"
+      ]
+    },
+    
+    polimidaAdhesive: {
+      name: "Filme de Polimida com Adesivo (equivalente ao Kapton® SV)",
+      specs: "Espessuras: 0,075mm / 0,10mm / 0,125mm / 0,15mm / 0,18mm • Altura: 270mm",
+      description: "Combina o desempenho térmico da polimida com a praticidade de um adesivo de alta resistência. Ideal para aplicações que exigem isolamento e fixação simultânea, reduzindo etapas na produção. Adesivo resistente a altas temperaturas e aderência excelente."
+    },
+    
+    polimidaBlack: {
+      name: "Filme de Polimida Black High Performance",
+      description: "Filme de polimida de alta performance com acabamento preto, ideal para aplicações que requerem máxima resistência térmica e estética profissional."
+    },
+    
+    phenolicFiber: {
+      name: "Fibra Fenólica",
+      specs: "Espessura: 0,15mm • Cores: Preta, Laranja e Marrom",
+      description: "Materiais de alta rigidez e resistência térmica, amplamente utilizados como suporte e reforço em bobinas. Reconhecidas pela qualidade superior, consideradas as melhores do Brasil. Alta resistência térmica e mecânica, com corte limpo e sem rebarbas."
+    },
+    
+    ccaWire: {
+      name: "Fio CCAW (Cobre Revestido de Alumínio)",
+      specs: "Composição: 60% Alumínio / 40% Cobre • Bitolas: 21 AWG a 30 AWG • Temperatura: 200°C",
+      description: "Combina leveza e alta condutividade elétrica, sendo ideal para bobinas de alto-falantes que exigem desempenho térmico e redução de peso. Disponível em rolos de 2kg e 7kg. Leve, altamente condutivo e com bobinas uniformes."
+    }
   },
 
   // WhatsApp
