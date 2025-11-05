@@ -38,49 +38,46 @@ const Services = () => {
                   </div>
                 </div>
 
-                <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
-                  <Card>
-                    <CardHeader>
-                      <CardTitle className="flex items-center gap-2">
-                        <FileText className="w-5 h-5 text-primary" />
-                        {t.services.planningTitle}
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <ul className="space-y-2 text-sm text-muted-foreground">
-                        <li>✓ {t.services.planning1}</li>
-                        <li>✓ {t.services.planning2}</li>
-                        <li>✓ {t.services.planning3}</li>
-                        <li>✓ {t.services.planning4}</li>
-                        <li>✓ {t.services.planning5}</li>
-                      </ul>
-                    </CardContent>
-                  </Card>
-
-                  <Card>
-                    <CardHeader>
-                      <CardTitle className="flex items-center gap-2">
-                        <TrendingUp className="w-5 h-5 text-primary" />
-                        {t.services.operationalTitle}
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <ul className="space-y-2 text-sm text-muted-foreground">
-                        <li>✓ {t.services.operational1}</li>
-                        <li>✓ {t.services.operational2}</li>
-                        <li>✓ {t.services.operational3}</li>
-                        <li>✓ {t.services.operational4}</li>
-                        <li>✓ {t.services.operational5}</li>
-                      </ul>
-                    </CardContent>
-                  </Card>
-                </div>
-
-                <div className="mt-8 p-6 bg-primary/5 rounded-xl border border-primary/20">
-                  <p className="text-sm text-foreground font-medium mb-2">
-                    {t.services.languagesTitle}
-                  </p>
-                  <p className="text-muted-foreground text-sm">{t.services.languagesText}</p>
+                <div className="mb-6">
+                  <h4 className="text-lg font-semibold text-foreground mb-4">{t.services.servicesTitle}</h4>
+                  <div className="space-y-4">
+                    <div className="border-l-4 border-primary pl-4">
+                      <h5 className="font-semibold text-foreground mb-1">{t.services.service1Title}</h5>
+                      <p className="text-sm text-muted-foreground">{t.services.service1Desc}</p>
+                    </div>
+                    <div className="border-l-4 border-primary pl-4">
+                      <h5 className="font-semibold text-foreground mb-1">{t.services.service2Title}</h5>
+                      <p className="text-sm text-muted-foreground">{t.services.service2Desc}</p>
+                    </div>
+                    <div className="border-l-4 border-primary pl-4">
+                      <h5 className="font-semibold text-foreground mb-1">{t.services.service3Title}</h5>
+                      <p className="text-sm text-muted-foreground">{t.services.service3Desc}</p>
+                    </div>
+                    <div className="border-l-4 border-primary pl-4">
+                      <h5 className="font-semibold text-foreground mb-1">{t.services.service4Title}</h5>
+                      <p className="text-sm text-muted-foreground">{t.services.service4Desc}</p>
+                    </div>
+                    <div className="border-l-4 border-primary pl-4">
+                      <h5 className="font-semibold text-foreground mb-1">{t.services.service5Title}</h5>
+                      <p className="text-sm text-muted-foreground">{t.services.service5Desc}</p>
+                    </div>
+                    <div className="border-l-4 border-primary pl-4">
+                      <h5 className="font-semibold text-foreground mb-1">{t.services.service6Title}</h5>
+                      <p className="text-sm text-muted-foreground">{t.services.service6Desc}</p>
+                    </div>
+                    <div className="border-l-4 border-primary pl-4">
+                      <h5 className="font-semibold text-foreground mb-1">{t.services.service7Title}</h5>
+                      <p className="text-sm text-muted-foreground">{t.services.service7Desc}</p>
+                    </div>
+                    <div className="border-l-4 border-primary pl-4">
+                      <h5 className="font-semibold text-foreground mb-1">{t.services.service8Title}</h5>
+                      <p className="text-sm text-muted-foreground">{t.services.service8Desc}</p>
+                    </div>
+                    <div className="border-l-4 border-primary pl-4">
+                      <h5 className="font-semibold text-foreground mb-1">{t.services.service9Title}</h5>
+                      <p className="text-sm text-muted-foreground">{t.services.service9Desc}</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </TabsContent>

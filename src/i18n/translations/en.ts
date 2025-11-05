@@ -43,31 +43,34 @@ export const en = {
 
   // Services
   services: {
-    title: "Our services",
+    title: "Services",
     description: "Complete solutions in foreign trade and specialized products",
     tab1: "Services",
     tab2: "Products",
     
     // Consulting
     consultingTitle: "Import and Export Services",
-    consultingIntro: "Brazil is known for being complex and expensive from a tax and bureaucratic standpoint. Doing business with other cultures, time zones, and procedures is not simple either. Navigating these waters requires experience, attention, and a good understanding of each step of the process.\n\nGlobal Key offers a complete solution in managing your import and export processes, with monitoring from origin to final delivery.",
+    consultingIntro: "Brazil is recognized for its tax and bureaucratic complexity, which makes international trade an even greater challenge.\n\nNegotiating with suppliers from other countries, dealing with different time zones, languages and logistical procedures requires experience, technique and attention to every detail.\n\nGlobal Key offers a complete solution in managing import and export processes, conducting each step with security, clarity and efficiency.",
     
-    planningTitle: "Main activities",
-    planning1: "Supplier search and evaluation of reliable manufacturers",
-    planning2: "Commercial negotiation and intermediation",
-    planning3: "Prior tax analysis and tax classification (NCM)",
-    planning4: "International correspondence (Portuguese, English and Spanish)",
-    planning5: "Foreign exchange closing and international financial operations",
-    
-    operationalTitle: "Operational management",
-    operational1: "Complete customs clearance",
-    operational2: "Shipment organization and logistics management",
-    operational3: "Documentary analysis and preparation (Invoice, Packing List, BL, AWB, DI, DUE, LI)",
-    operational4: "Issuance of import and export invoices",
-    operational5: "Technical monitoring from registration to cargo release",
-    
-    languagesTitle: "Differentials",
-    languagesText: "All this with service in Portuguese, English and Spanish, offering security, transparency and efficiency at every stage of the process.",
+    servicesTitle: "Our services include:",
+    service1Title: "International supplier search and qualification",
+    service1Desc: "Research, analysis and direct contact with reliable manufacturers.",
+    service2Title: "Commercial and technical negotiation",
+    service2Desc: "Intermediation of prices, deadlines and conditions, always seeking the best cost-benefit.",
+    service3Title: "Tax analysis and fiscal classification",
+    service3Desc: "Prior tax assessment and appropriate NCM classification to avoid penalties and unnecessary costs.",
+    service4Title: "International communication and correspondence",
+    service4Desc: "Professional service in English and Spanish, ensuring precision and fluidity in negotiations.",
+    service5Title: "Foreign exchange closing and international financial management",
+    service5Desc: "Payments, receipts and remittances with complete support and exchange monitoring.",
+    service6Title: "Customs clearance and cargo release",
+    service6Desc: "Technical advisory for import and export, focusing on agility and compliance.",
+    service7Title: "Logistics management and international transport",
+    service7Desc: "Shipment organization, freight contracting, choice of ideal modal (air, sea or road), negotiation of rates and expenses — including storage, internal transport, BL, insurance and other operational costs.",
+    service8Title: "Document analysis and preparation",
+    service8Desc: "Commercial Invoice, Packing List, Bill of Lading (AWB/BL), Certificate of Origin, Declarations (DI/DUE), Import License (LI) and other documents required for each operation.",
+    service9Title: "Invoice issuance",
+    service9Desc: "Inbound invoices for imports and outbound invoices for exports, following all Brazilian tax requirements.",
     
     // Products
     productsTitle: "Premium products for speaker repairs",

@@ -43,31 +43,34 @@ export const es = {
 
   // Services
   services: {
-    title: "Nuestros servicios",
+    title: "Servicios",
     description: "Soluciones completas en comercio exterior y productos especializados",
     tab1: "Servicios",
     tab2: "Productos",
     
     // Consulting
     consultingTitle: "Servicios de Importación y Exportación",
-    consultingIntro: "Brasil es conocido por ser complejo y costoso desde el punto de vista tributario y burocrático. Hacer negocios con otras culturas, husos horarios y procedimientos tampoco es simple. Navegar por estas aguas requiere experiencia, atención y una buena comprensión de cada etapa del proceso.\n\nGlobal Key ofrece una solución completa en la gestión de sus procesos de importación y exportación, con seguimiento desde el origen hasta la entrega final.",
+    consultingIntro: "Brasil es reconocido por su complejidad tributaria y burocrática, lo que hace del comercio internacional un desafío aún mayor.\n\nNegociar con proveedores de otros países, lidiar con diferentes husos horarios, idiomas y procedimientos logísticos requiere experiencia, técnica y atención a cada detalle.\n\nGlobal Key ofrece una solución completa en gestión de procesos de importación y exportación, conduciendo cada etapa con seguridad, claridad y eficiencia.",
     
-    planningTitle: "Actividades principales",
-    planning1: "Búsqueda de proveedores y evaluación de fabricantes confiables",
-    planning2: "Negociación e intermediación comercial",
-    planning3: "Análisis tributario previo y clasificación fiscal (NCM)",
-    planning4: "Correspondencia internacional (portugués, inglés y español)",
-    planning5: "Cierre de cambio y operaciones financieras internacionales",
-    
-    operationalTitle: "Gestión operacional",
-    operational1: "Despacho aduanero completo",
-    operational2: "Organización de embarque y gestión logística",
-    operational3: "Análisis y elaboración documental (Invoice, Packing List, BL, AWB, DI, DUE, LI)",
-    operational4: "Emisión de facturas de importación y exportación",
-    operational5: "Seguimiento técnico desde el registro hasta la liberación de la carga",
-    
-    languagesTitle: "Diferenciales",
-    languagesText: "Todo esto con atención en portugués, inglés y español, ofreciendo seguridad, transparencia y eficiencia en cada etapa del proceso.",
+    servicesTitle: "Nuestros servicios incluyen:",
+    service1Title: "Búsqueda y calificación de proveedores internacionales",
+    service1Desc: "Investigación, análisis y contacto directo con fabricantes confiables.",
+    service2Title: "Negociación comercial y técnica",
+    service2Desc: "Intermediación de precios, plazos y condiciones, buscando siempre el mejor costo-beneficio.",
+    service3Title: "Análisis tributario y clasificación fiscal",
+    service3Desc: "Evaluación previa de impuestos y encuadramiento NCM adecuado para evitar multas y costos innecesarios.",
+    service4Title: "Comunicación y correspondencia internacional",
+    service4Desc: "Atención profesional en inglés y español, garantizando precisión y fluidez en la negociación.",
+    service5Title: "Cierre de cambio y gestión financiera internacional",
+    service5Desc: "Pagos, cobros y remesas con soporte completo y seguimiento cambiario.",
+    service6Title: "Despacho aduanero y liberación de cargas",
+    service6Desc: "Asesoría técnica para importación y exportación, con enfoque en agilidad y conformidad.",
+    service7Title: "Gestión logística y transporte internacional",
+    service7Desc: "Organización del embarque, contratación de flete, elección del modal ideal (aéreo, marítimo o terrestre), negociación de tasas y gastos — incluyendo almacenamiento, transporte interno, BL, seguros y demás costos operacionales.",
+    service8Title: "Análisis y elaboración documental",
+    service8Desc: "Factura Comercial (Invoice), Lista de Empaque (Packing List), Conocimiento de Embarque (AWB/BL), Certificado de Origen, Declaraciones (DI/DUE), Licencia de Importación (LI) y demás documentos exigidos por cada operación.",
+    service9Title: "Emisión de facturas",
+    service9Desc: "Factura de entrada para importaciones y factura de salida para exportaciones, siguiendo todos los requisitos fiscales brasileños.",
     
     // Products
     productsTitle: "Productos premium para reparaciones de altavoces",
