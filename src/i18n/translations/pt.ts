@@ -102,11 +102,11 @@ export const pt = {
   // Institucional
   institucional: {
     title: "INSTITUCIONAL",
-    missionTitle: "2.1 – Missão",
+    missionTitle: "Missão",
     missionText: "Somos uma organização global em busca de oferecer produtos e serviços excepcionais, de forma descomplicada, ágil e moderna, com a finalidade de criar vínculos fortes e duradouros com nossos clientes, fornecedores e colaboradores.",
-    visionTitle: "2.2 – Visão",
+    visionTitle: "Visão",
     visionText: "Sermos referência na comercialização de produtos nacionais ou importados, bem como na prestação de serviços no Brasil ou no exterior.",
-    valuesTitle: "2.3 – Valores",
+    valuesTitle: "Valores",
     value1: "Respeitar o indivíduo, independentemente de suas características",
     value2: "Buscar superar as expectativas de nossos clientes, fornecedores e parceiros",
   },
