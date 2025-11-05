@@ -2,9 +2,9 @@ export const pt = {
   // Header
   header: {
     home: "Início",
-    about: "Sobre",
+    institutional: "Institucional",
+    products: "Produtos",
     services: "Serviços",
-    values: "Valores",
     contact: "Contato",
   },
 
@@ -138,9 +138,14 @@ export const pt = {
     title: "Entre em contato",
     subtitle: "Estamos prontos para atender você",
     phone: "Telefone",
+    phoneNumber: "+55 11 2589-7600",
+    whatsappNumber: "+55 11 99252-5603",
     email: "E-mail",
+    emailAddress: "globalkey@globalkey.com.br",
     address: "Endereço",
     addressText: "Rua Dr. Albuquerque Lins, 503, CJ 113",
+    addressCity: "Santa Cecilia, São Paulo, Brasil",
+    addressZip: "CEP 01231-001",
     hours: "Horário",
     hoursText: "Seg - Sex: 9h às 18h",
     ctaTitle: "Fale conosco pelo WhatsApp",
@@ -148,8 +153,8 @@ export const pt = {
     ctaButton: "Iniciar conversa",
     followTitle: "Siga-nos",
     followDescription: "Acompanhe nossas novidades",
-    company: "Global Key Comercio e Serviços LTDA",
-    cnpj: "CNPJ: 09.310.556/0001-59",
+    company: "GLOBAL KEY COMERCIO E SERVIÇOS LTDA",
+    cnpj: "09.310.556/0001-59",
   },
 
   // Gallery

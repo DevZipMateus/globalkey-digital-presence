@@ -48,22 +48,22 @@ const Header = () => {
               {t.header.home}
             </button>
             <button
-              onClick={() => scrollToSection("sobre")}
+              onClick={() => scrollToSection("institucional")}
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
             >
-              {t.header.about}
+              {t.header.institutional}
+            </button>
+            <button
+              onClick={() => scrollToSection("produtos")}
+              className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+            >
+              {t.header.products}
             </button>
             <button
               onClick={() => scrollToSection("servicos")}
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
             >
               {t.header.services}
-            </button>
-            <button
-              onClick={() => scrollToSection("valores")}
-              className="text-sm font-medium text-foreground hover:text-primary transition-colors"
-            >
-              {t.header.values}
             </button>
             <LanguageSelector />
             <Button
@@ -95,22 +95,22 @@ const Header = () => {
                 {t.header.home}
               </button>
               <button
-                onClick={() => scrollToSection("sobre")}
+                onClick={() => scrollToSection("institucional")}
                 className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors py-2"
               >
-                {t.header.about}
+                {t.header.institutional}
+              </button>
+              <button
+                onClick={() => scrollToSection("produtos")}
+                className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors py-2"
+              >
+                {t.header.products}
               </button>
               <button
                 onClick={() => scrollToSection("servicos")}
                 className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors py-2"
               >
                 {t.header.services}
-              </button>
-              <button
-                onClick={() => scrollToSection("valores")}
-                className="text-left text-sm font-medium text-foreground hover:text-primary transition-colors py-2"
-              >
-                {t.header.values}
               </button>
               <div className="py-2">
                 <LanguageSelector />
