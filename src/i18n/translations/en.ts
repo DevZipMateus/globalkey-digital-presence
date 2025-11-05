@@ -180,8 +180,18 @@ export const en = {
     
     polimidaAdhesive: {
       name: "Polyimide Film with Adhesive (equivalent to Kapton® SV)",
-      specs: "Thicknesses: 0.075mm / 0.10mm / 0.125mm / 0.15mm / 0.18mm • Height: 270mm",
-      description: "Combines the thermal performance of polyimide with the practicality of a high-strength adhesive. Ideal for applications requiring simultaneous insulation and fixation, reducing production steps. High-temperature resistant adhesive with excellent adhesion."
+      specs: "Available thicknesses: 0.075 mm / 0.10 mm / 0.125 mm / 0.15 mm / 0.18 mm • Height: 270 mm",
+      description: "Polyimide Film with Adhesive (similar to Kapton® SV) combines the thermal performance of polyimide with the practicality of a high-strength adhesive. Ideal for applications requiring simultaneous insulation and fixation, reducing production steps and providing professional finishing.",
+      applications: [
+        "Fixation and insulation in coils and speakers",
+        "High-temperature motors and sensors",
+        "Thermal reinforcement in electronic circuits"
+      ],
+      features: [
+        "High-temperature resistant adhesive",
+        "Excellent adhesion on metallic and plastic surfaces",
+        "Practical application and clean finish"
+      ]
     },
     
     polimidaBlack: {

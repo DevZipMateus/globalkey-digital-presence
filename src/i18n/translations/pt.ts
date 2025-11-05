@@ -180,8 +180,18 @@ export const pt = {
     
     polimidaAdhesive: {
       name: "Filme de Polimida com Adesivo (equivalente ao Kapton® SV)",
-      specs: "Espessuras: 0,075mm / 0,10mm / 0,125mm / 0,15mm / 0,18mm • Altura: 270mm",
-      description: "Combina o desempenho térmico da polimida com a praticidade de um adesivo de alta resistência. Ideal para aplicações que exigem isolamento e fixação simultânea, reduzindo etapas na produção. Adesivo resistente a altas temperaturas e aderência excelente."
+      specs: "Espessuras disponíveis: 0,075 mm / 0,10 mm / 0,125 mm / 0,15 mm / 0,18 mm • Altura: 270 mm",
+      description: "O Filme de Polimida com Adesivo (semelhante ao Kapton® SV) combina o desempenho térmico da polimida com a praticidade de um adesivo de alta resistência. Ideal para aplicações que exigem isolamento e fixação simultânea, reduzindo etapas na produção e proporcionando acabamento profissional.",
+      applications: [
+        "Fixação e isolamento em bobinas e alto-falantes",
+        "Motores e sensores de alta temperatura",
+        "Reforço térmico em circuitos eletrônicos"
+      ],
+      features: [
+        "Adesivo resistente a altas temperaturas",
+        "Aderência excelente em superfícies metálicas e plásticas",
+        "Aplicação prática e acabamento limpo"
+      ]
     },
     
     polimidaBlack: {
