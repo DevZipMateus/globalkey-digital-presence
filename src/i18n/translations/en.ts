@@ -217,8 +217,18 @@ export const en = {
     
     ccaWire: {
       name: "CCAW Wire (Copper Clad Aluminum Wire)",
-      specs: "Composition: 60% Aluminum / 40% Copper • Gauges: 21 AWG to 30 AWG • Temperature: 200°C",
-      description: "Combines lightness and high electrical conductivity, ideal for speaker coils that require thermal performance and weight reduction. Available in 2kg and 7kg rolls. Lightweight, highly conductive with uniform coils."
+      specs: "Composition: 60% Aluminum / 40% Copper • Gauges: 21 AWG to 30 AWG • Temperature: 200°C • Available in: 2 kg and 7 kg rolls",
+      description: "CCAW Wire combines lightness and high electrical conductivity, ideal for speaker coils that require thermal performance and weight reduction. Its copper-coated aluminum core offers excellent electrical efficiency and cost-effectiveness.",
+      applications: [
+        "Speaker and tweeter coils",
+        "Miniaturized electric motors",
+        "Applications requiring lightness and durability"
+      ],
+      features: [
+        "Lightweight and highly conductive",
+        "Thermal resistance up to 200 °C",
+        "Uniform coils carefully packaged"
+      ]
     }
   },
 

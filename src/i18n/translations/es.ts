@@ -217,8 +217,18 @@ export const es = {
     
     ccaWire: {
       name: "Alambre CCAW (Alambre de Aluminio Revestido de Cobre)",
-      specs: "Composición: 60% Aluminio / 40% Cobre • Calibres: 21 AWG a 30 AWG • Temperatura: 200°C",
-      description: "Combina ligereza y alta conductividad eléctrica, siendo ideal para bobinas de altavoces que requieren rendimiento térmico y reducción de peso. Disponible en rollos de 2kg y 7kg. Ligero, altamente conductivo y con bobinas uniformes."
+      specs: "Composición: 60% Aluminio / 40% Cobre • Calibres: 21 AWG a 30 AWG • Temperatura: 200°C • Disponible en: rollos de 2 kg y 7 kg",
+      description: "El Alambre CCAW combina ligereza y alta conductividad eléctrica, siendo ideal para bobinas de altavoces que requieren rendimiento térmico y reducción de peso. Su núcleo de aluminio revestido de cobre ofrece excelente eficiencia eléctrica y rentabilidad.",
+      applications: [
+        "Bobinas de altavoces y tweeters",
+        "Motores eléctricos miniaturizados",
+        "Aplicaciones que requieren ligereza y durabilidad"
+      ],
+      features: [
+        "Ligero y altamente conductivo",
+        "Resistencia térmica de hasta 200 °C",
+        "Bobinas uniformes y cuidadosamente empaquetadas"
+      ]
     }
   },
 

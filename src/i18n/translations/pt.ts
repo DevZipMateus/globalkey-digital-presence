@@ -217,8 +217,18 @@ export const pt = {
     
     ccaWire: {
       name: "Fio CCAW (Cobre Revestido de Alumínio)",
-      specs: "Composição: 60% Alumínio / 40% Cobre • Bitolas: 21 AWG a 30 AWG • Temperatura: 200°C",
-      description: "Combina leveza e alta condutividade elétrica, sendo ideal para bobinas de alto-falantes que exigem desempenho térmico e redução de peso. Disponível em rolos de 2kg e 7kg. Leve, altamente condutivo e com bobinas uniformes."
+      specs: "Composição: 60% Alumínio / 40% Cobre • Bitolas: 21 AWG a 30 AWG • Temperatura: 200°C • Disponível em: rolos de 2 kg e 7 kg",
+      description: "O Fio CCAW combina leveza e alta condutividade elétrica, sendo ideal para bobinas de alto-falantes que exigem desempenho térmico e redução de peso. Seu núcleo de alumínio revestido de cobre oferece excelente eficiência elétrica e custo-benefício.",
+      applications: [
+        "Bobinas de alto-falantes e tweeters",
+        "Motores elétricos miniaturizados",
+        "Aplicações que exigem leveza e durabilidade"
+      ],
+      features: [
+        "Leve e altamente condutivo",
+        "Resistência térmica de até 200 °C",
+        "Bobinas uniformes e embaladas com cuidado"
+      ]
     }
   },
 

@@ -52,6 +52,8 @@ const Gallery = () => {
       name: t.gallery.ccaWire.name,
       specs: t.gallery.ccaWire.specs,
       description: t.gallery.ccaWire.description,
+      applications: t.gallery.ccaWire.applications,
+      features: t.gallery.ccaWire.features,
       images: [fioCca],
     },
   ];
