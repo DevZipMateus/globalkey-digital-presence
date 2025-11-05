@@ -126,6 +126,13 @@ export const pt = {
     value2: "Buscar superar as expectativas de nossos clientes, fornecedores e parceiros",
   },
 
+  // Why Choose Us
+  whyChooseUs: {
+    title: "Por que escolher a Global Key",
+    subtitle: "Experiência prática, domínio técnico e um atendimento direto — sem burocracia e sem surpresas.",
+    description: "Nosso compromisso é simplificar o comércio exterior, permitindo que você foque no crescimento do seu negócio enquanto cuidamos de todo o processo.",
+  },
+
   // Contact
   contact: {
     title: "Entre em contato",
