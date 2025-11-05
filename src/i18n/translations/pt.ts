@@ -156,6 +156,8 @@ export const pt = {
   gallery: {
     title: "Galeria de Produtos",
     description: "Conheça nossos produtos de alta qualidade com especificações técnicas detalhadas.",
+    moreDetails: "Mais detalhes",
+    lessDetails: "Menos detalhes",
     applicationsTitle: "Aplicações:",
     featuresTitle: "Diferenciais:",
     

@@ -1,6 +1,9 @@
+import { useState } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Check } from "lucide-react";
+import { Check, ChevronDown } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
+import { Button } from "@/components/ui/button";
 import filmePolimidaSemAdesivo from "@/assets/filme_polimida_sem_adesivo.jpg";
 import filmePolimidaSemAdesivo2 from "@/assets/filme_polimida_sem_adesivo_2.jpg";
 import filmePolimidaAdesivo from "@/assets/filme_polimida_adesivo.jpg";
@@ -13,6 +16,7 @@ import fioCca from "@/assets/fio_cca.jpg";
 
 const Gallery = () => {
   const { t } = useLanguage();
+  const [openItems, setOpenItems] = useState<Record<number, boolean>>({});
 
   const products = [
     {
@@ -91,44 +95,66 @@ const Gallery = () => {
                   ))}
                 </div>
 
-                {/* Description */}
-                <p className="text-muted-foreground leading-relaxed">
-                  {product.description}
-                </p>
+                {/* Collapsible Details */}
+                <Collapsible
+                  open={openItems[index]}
+                  onOpenChange={(open) => setOpenItems({ ...openItems, [index]: open })}
+                >
+                  <CollapsibleTrigger asChild>
+                    <Button 
+                      variant="outline" 
+                      className="w-full justify-between"
+                    >
+                      <span>{openItems[index] ? t.gallery.lessDetails : t.gallery.moreDetails}</span>
+                      <ChevronDown 
+                        className={`h-4 w-4 transition-transform duration-200 ${
+                          openItems[index] ? 'transform rotate-180' : ''
+                        }`}
+                      />
+                    </Button>
+                  </CollapsibleTrigger>
+                  
+                  <CollapsibleContent className="space-y-6 pt-6">
+                    {/* Description */}
+                    <p className="text-muted-foreground leading-relaxed">
+                      {product.description}
+                    </p>
 
-                {/* Applications */}
-                {product.applications && (
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-3">
-                      {t.gallery.applicationsTitle}
-                    </h4>
-                    <ul className="space-y-2">
-                      {product.applications.map((app, appIndex) => (
-                        <li key={appIndex} className="flex items-start gap-2 text-muted-foreground">
-                          <span className="text-primary mt-1">•</span>
-                          <span>{app}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
+                    {/* Applications */}
+                    {product.applications && (
+                      <div>
+                        <h4 className="font-semibold text-foreground mb-3">
+                          {t.gallery.applicationsTitle}
+                        </h4>
+                        <ul className="space-y-2">
+                          {product.applications.map((app, appIndex) => (
+                            <li key={appIndex} className="flex items-start gap-2 text-muted-foreground">
+                              <span className="text-primary mt-1">•</span>
+                              <span>{app}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
 
-                {/* Features */}
-                {product.features && (
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-3">
-                      {t.gallery.featuresTitle}
-                    </h4>
-                    <ul className="space-y-2">
-                      {product.features.map((feature, featureIndex) => (
-                        <li key={featureIndex} className="flex items-start gap-2 text-muted-foreground">
-                          <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                          <span>{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
+                    {/* Features */}
+                    {product.features && (
+                      <div>
+                        <h4 className="font-semibold text-foreground mb-3">
+                          {t.gallery.featuresTitle}
+                        </h4>
+                        <ul className="space-y-2">
+                          {product.features.map((feature, featureIndex) => (
+                            <li key={featureIndex} className="flex items-start gap-2 text-muted-foreground">
+                              <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                              <span>{feature}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </CollapsibleContent>
+                </Collapsible>
               </CardContent>
             </Card>
           ))}
