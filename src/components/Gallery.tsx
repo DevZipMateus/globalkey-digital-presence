@@ -31,6 +31,8 @@ const Gallery = () => {
       name: t.gallery.polimidaAdhesive.name,
       specs: t.gallery.polimidaAdhesive.specs,
       description: t.gallery.polimidaAdhesive.description,
+      applications: t.gallery.polimidaAdhesive.applications,
+      features: t.gallery.polimidaAdhesive.features,
       images: [filmePolimidaAdesivo, filmePolimidaAdesivo2],
     },
     {
