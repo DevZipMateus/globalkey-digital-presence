@@ -2,6 +2,7 @@ import { FileText, Package2, Ship, TrendingUp } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { useLanguage } from "@/contexts/LanguageContext";
+import globalKeyImage from "@/assets/global-key-services.png";
 
 const Services = () => {
   const { t } = useLanguage();
@@ -28,13 +29,24 @@ const Services = () => {
 
             <TabsContent value="assessoria" className="space-y-6 sm:space-y-8">
               <div className="bg-white rounded-xl md:rounded-2xl p-4 sm:p-6 md:p-8 shadow-soft">
-                <div className="flex items-start gap-4 mb-8">
-                  <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
-                    <Ship className="w-8 h-8 text-primary" />
+                <div className="flex flex-col lg:flex-row items-start gap-6 mb-8">
+                  <div className="w-full lg:w-1/2">
+                    <div className="flex items-start gap-4 mb-6">
+                      <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                        <Ship className="w-8 h-8 text-primary" />
+                      </div>
+                      <div>
+                        <h3 className="text-2xl font-bold text-foreground mb-3">{t.services.consultingTitle}</h3>
+                        <p className="text-muted-foreground whitespace-pre-line">{t.services.consultingIntro}</p>
+                      </div>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-foreground mb-3">{t.services.consultingTitle}</h3>
-                    <p className="text-muted-foreground whitespace-pre-line">{t.services.consultingIntro}</p>
+                  <div className="w-full lg:w-1/2 flex items-center justify-center">
+                    <img 
+                      src={globalKeyImage} 
+                      alt="Global Key - Import & Export Services" 
+                      className="w-full max-w-md rounded-lg"
+                    />
                   </div>
                 </div>
 
