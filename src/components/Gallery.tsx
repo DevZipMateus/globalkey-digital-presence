@@ -85,7 +85,7 @@ const Gallery = () => {
           {t.gallery.description}
         </p>
         
-        <div className="space-y-12">
+        <div className="space-y-8">
           {products.map((product, index) => (
             <Card key={index} className="overflow-hidden border-l-4 border-l-primary hover:shadow-medium transition-shadow animate-fade-in">
               <CardHeader>
@@ -98,16 +98,16 @@ const Gallery = () => {
                   </p>
                 )}
               </CardHeader>
-              <CardContent className="space-y-6">
+              <CardContent className="space-y-4">
                 {/* Images */}
-                <div className={`grid gap-4 ${product.images.length > 1 ? 'grid-cols-2' : 'grid-cols-1 max-w-md mx-auto'}`}>
+                <div className={`grid gap-4 ${product.images.length > 1 ? 'grid-cols-2 md:grid-cols-3 lg:grid-cols-4' : 'grid-cols-1 max-w-md mx-auto'}`}>
                   {product.images.map((image, imgIndex) => (
                     <div
                       key={imgIndex}
                       className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
                       onClick={() => setLightboxImage({ src: image, alt: `${product.name} ${imgIndex + 1}` })}
                     >
-                      <div className="aspect-square overflow-hidden">
+                      <div className="aspect-video max-h-48 overflow-hidden">
                         <img
                           src={image}
                           alt={`${product.name} ${imgIndex + 1}`}
