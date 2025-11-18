@@ -2,9 +2,36 @@ import { Ship } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useLanguage } from "@/contexts/LanguageContext";
 import globalKeyImage from "@/assets/global-key-services.png";
+import { useEffect, useRef, useState } from "react";
 
 const Services = () => {
   const { t } = useLanguage();
+  const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
+  const [visibleCards, setVisibleCards] = useState<boolean[]>([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const index = cardsRef.current.findIndex(ref => ref === entry.target);
+          if (index !== -1 && entry.isIntersecting) {
+            setVisibleCards(prev => {
+              const newState = [...prev];
+              newState[index] = true;
+              return newState;
+            });
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
+    );
+
+    cardsRef.current.forEach(ref => {
+      if (ref) observer.observe(ref);
+    });
+
+    return () => observer.disconnect();
+  }, []);
   
   return (
     <section id="servicos" className="py-12 sm:py-16 md:py-20 bg-muted/30">
@@ -46,7 +73,13 @@ const Services = () => {
                 <h4 className="text-lg font-semibold text-foreground mb-6">{t.services.servicesTitle}</h4>
                 
                 <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
-                  <Card className="hover:shadow-medium transition-all animate-fade-in border-l-4 border-l-primary">
+                  <Card 
+                    ref={el => cardsRef.current[0] = el}
+                    className={`hover:shadow-medium transition-all border-l-4 border-l-primary ${
+                      visibleCards[0] ? 'animate-fade-in opacity-100' : 'opacity-0'
+                    }`}
+                    style={{ animationDelay: '0ms' }}
+                  >
                     <CardHeader>
                       <CardTitle className="text-lg">{t.services.service1Title}</CardTitle>
                     </CardHeader>
@@ -55,7 +88,13 @@ const Services = () => {
                     </CardContent>
                   </Card>
 
-                  <Card className="hover:shadow-medium transition-all animate-fade-in border-l-4 border-l-primary">
+                  <Card 
+                    ref={el => cardsRef.current[1] = el}
+                    className={`hover:shadow-medium transition-all border-l-4 border-l-primary ${
+                      visibleCards[1] ? 'animate-fade-in opacity-100' : 'opacity-0'
+                    }`}
+                    style={{ animationDelay: '100ms' }}
+                  >
                     <CardHeader>
                       <CardTitle className="text-lg">{t.services.service2Title}</CardTitle>
                     </CardHeader>
@@ -64,7 +103,13 @@ const Services = () => {
                     </CardContent>
                   </Card>
 
-                  <Card className="hover:shadow-medium transition-all animate-fade-in border-l-4 border-l-primary">
+                  <Card 
+                    ref={el => cardsRef.current[2] = el}
+                    className={`hover:shadow-medium transition-all border-l-4 border-l-primary ${
+                      visibleCards[2] ? 'animate-fade-in opacity-100' : 'opacity-0'
+                    }`}
+                    style={{ animationDelay: '200ms' }}
+                  >
                     <CardHeader>
                       <CardTitle className="text-lg">{t.services.service3Title}</CardTitle>
                     </CardHeader>
@@ -73,7 +118,13 @@ const Services = () => {
                     </CardContent>
                   </Card>
 
-                  <Card className="hover:shadow-medium transition-all animate-fade-in border-l-4 border-l-primary">
+                  <Card 
+                    ref={el => cardsRef.current[3] = el}
+                    className={`hover:shadow-medium transition-all border-l-4 border-l-primary ${
+                      visibleCards[3] ? 'animate-fade-in opacity-100' : 'opacity-0'
+                    }`}
+                    style={{ animationDelay: '300ms' }}
+                  >
                     <CardHeader>
                       <CardTitle className="text-lg">{t.services.service4Title}</CardTitle>
                     </CardHeader>
@@ -82,7 +133,13 @@ const Services = () => {
                     </CardContent>
                   </Card>
 
-                  <Card className="hover:shadow-medium transition-all animate-fade-in border-l-4 border-l-primary">
+                  <Card 
+                    ref={el => cardsRef.current[4] = el}
+                    className={`hover:shadow-medium transition-all border-l-4 border-l-primary ${
+                      visibleCards[4] ? 'animate-fade-in opacity-100' : 'opacity-0'
+                    }`}
+                    style={{ animationDelay: '400ms' }}
+                  >
                     <CardHeader>
                       <CardTitle className="text-lg">{t.services.service5Title}</CardTitle>
                     </CardHeader>
@@ -91,7 +148,13 @@ const Services = () => {
                     </CardContent>
                   </Card>
 
-                  <Card className="hover:shadow-medium transition-all animate-fade-in border-l-4 border-l-primary">
+                  <Card 
+                    ref={el => cardsRef.current[5] = el}
+                    className={`hover:shadow-medium transition-all border-l-4 border-l-primary ${
+                      visibleCards[5] ? 'animate-fade-in opacity-100' : 'opacity-0'
+                    }`}
+                    style={{ animationDelay: '500ms' }}
+                  >
                     <CardHeader>
                       <CardTitle className="text-lg">{t.services.service6Title}</CardTitle>
                     </CardHeader>
@@ -100,7 +163,13 @@ const Services = () => {
                     </CardContent>
                   </Card>
 
-                  <Card className="hover:shadow-medium transition-all animate-fade-in border-l-4 border-l-primary">
+                  <Card 
+                    ref={el => cardsRef.current[6] = el}
+                    className={`hover:shadow-medium transition-all border-l-4 border-l-primary ${
+                      visibleCards[6] ? 'animate-fade-in opacity-100' : 'opacity-0'
+                    }`}
+                    style={{ animationDelay: '600ms' }}
+                  >
                     <CardHeader>
                       <CardTitle className="text-lg">{t.services.service7Title}</CardTitle>
                     </CardHeader>
@@ -109,7 +178,13 @@ const Services = () => {
                     </CardContent>
                   </Card>
 
-                  <Card className="hover:shadow-medium transition-all animate-fade-in border-l-4 border-l-primary">
+                  <Card 
+                    ref={el => cardsRef.current[7] = el}
+                    className={`hover:shadow-medium transition-all border-l-4 border-l-primary ${
+                      visibleCards[7] ? 'animate-fade-in opacity-100' : 'opacity-0'
+                    }`}
+                    style={{ animationDelay: '700ms' }}
+                  >
                     <CardHeader>
                       <CardTitle className="text-lg">{t.services.service8Title}</CardTitle>
                     </CardHeader>
@@ -118,7 +193,13 @@ const Services = () => {
                     </CardContent>
                   </Card>
 
-                  <Card className="hover:shadow-medium transition-all animate-fade-in border-l-4 border-l-primary">
+                  <Card 
+                    ref={el => cardsRef.current[8] = el}
+                    className={`hover:shadow-medium transition-all border-l-4 border-l-primary ${
+                      visibleCards[8] ? 'animate-fade-in opacity-100' : 'opacity-0'
+                    }`}
+                    style={{ animationDelay: '800ms' }}
+                  >
                     <CardHeader>
                       <CardTitle className="text-lg">{t.services.service9Title}</CardTitle>
                     </CardHeader>
