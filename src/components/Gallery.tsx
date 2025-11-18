@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogClose } from "@/components/ui/dialog";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import filmePolimidaSemAdesivo from "@/assets/filme_polimida_sem_adesivo.jpg";
 import filmePolimidaSemAdesivo2 from "@/assets/filme_polimida_sem_adesivo_2.jpg";
 import filmePolimidaAdesivo from "@/assets/filme_polimida_adesivo.jpg";
@@ -23,7 +24,7 @@ import papelKraft from "@/assets/papel_kraft.jpg";
 const Gallery = () => {
   const { t } = useLanguage();
   const [openItems, setOpenItems] = useState<Record<number, boolean>>({});
-  const [lightboxImage, setLightboxImage] = useState<{ src: string; alt: string } | null>(null);
+  const [lightboxImages, setLightboxImages] = useState<{ images: string[]; currentIndex: number; productName: string } | null>(null);
   const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
   const [visibleCards, setVisibleCards] = useState<boolean[]>(new Array(6).fill(false));
 
@@ -142,7 +143,7 @@ const Gallery = () => {
                     <div
                       key={imgIndex}
                       className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
-                      onClick={() => setLightboxImage({ src: image, alt: `${product.name} ${imgIndex + 1}` })}
+                      onClick={() => setLightboxImages({ images: product.images, currentIndex: imgIndex, productName: product.name })}
                     >
                       <div className="aspect-video max-h-48 overflow-hidden">
                         <img
@@ -226,20 +227,39 @@ const Gallery = () => {
           ))}
         </div>
 
-        {/* Lightbox Modal */}
-        <Dialog open={!!lightboxImage} onOpenChange={(open) => !open && setLightboxImage(null)}>
+        {/* Lightbox Modal with Carousel */}
+        <Dialog open={!!lightboxImages} onOpenChange={(open) => !open && setLightboxImages(null)}>
           <DialogContent className="max-w-7xl w-[95vw] h-[95vh] p-0 bg-black/95 border-none">
-            <DialogClose className="absolute right-4 top-4 z-50 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
+            <DialogClose className="absolute right-4 top-4 z-50 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none">
               <X className="h-8 w-8 text-white" />
               <span className="sr-only">Fechar</span>
             </DialogClose>
-            {lightboxImage && (
-              <div className="flex items-center justify-center w-full h-full p-4">
-                <img
-                  src={lightboxImage.src}
-                  alt={lightboxImage.alt}
-                  className="max-w-full max-h-full object-contain animate-scale-in"
-                />
+            {lightboxImages && (
+              <div className="flex flex-col items-center justify-center w-full h-full p-4">
+                <Carousel className="w-full max-w-6xl" opts={{ startIndex: lightboxImages.currentIndex, loop: true }}>
+                  <CarouselContent>
+                    {lightboxImages.images.map((image, index) => (
+                      <CarouselItem key={index}>
+                        <div className="flex items-center justify-center h-[85vh]">
+                          <img
+                            src={image}
+                            alt={`${lightboxImages.productName} ${index + 1}`}
+                            className="max-w-full max-h-full object-contain"
+                          />
+                        </div>
+                      </CarouselItem>
+                    ))}
+                  </CarouselContent>
+                  {lightboxImages.images.length > 1 && (
+                    <>
+                      <CarouselPrevious className="left-4 h-12 w-12 bg-white/10 hover:bg-white/20 border-white/20 text-white" />
+                      <CarouselNext className="right-4 h-12 w-12 bg-white/10 hover:bg-white/20 border-white/20 text-white" />
+                    </>
+                  )}
+                </Carousel>
+                <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white/70 text-sm bg-black/50 px-3 py-1 rounded-full">
+                  {lightboxImages.currentIndex + 1} / {lightboxImages.images.length}
+                </div>
               </div>
             )}
           </DialogContent>
