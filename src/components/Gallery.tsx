@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Check, ChevronDown } from "lucide-react";
+import { Check, ChevronDown, X } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogClose } from "@/components/ui/dialog";
 import filmePolimidaSemAdesivo from "@/assets/filme_polimida_sem_adesivo.jpg";
 import filmePolimidaSemAdesivo2 from "@/assets/filme_polimida_sem_adesivo_2.jpg";
 import filmePolimidaAdesivo from "@/assets/filme_polimida_adesivo.jpg";
@@ -22,6 +23,7 @@ import papelKraft from "@/assets/papel_kraft.jpg";
 const Gallery = () => {
   const { t } = useLanguage();
   const [openItems, setOpenItems] = useState<Record<number, boolean>>({});
+  const [lightboxImage, setLightboxImage] = useState<{ src: string; alt: string } | null>(null);
 
   const products = [
     {
@@ -102,7 +104,8 @@ const Gallery = () => {
                   {product.images.map((image, imgIndex) => (
                     <div
                       key={imgIndex}
-                      className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+                      className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
+                      onClick={() => setLightboxImage({ src: image, alt: `${product.name} ${imgIndex + 1}` })}
                     >
                       <div className="aspect-square overflow-hidden">
                         <img
@@ -111,6 +114,11 @@ const Gallery = () => {
                           className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                           loading="lazy"
                         />
+                      </div>
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 flex items-center justify-center">
+                        <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-sm font-medium">
+                          Clique para ampliar
+                        </span>
                       </div>
                     </div>
                   ))}
@@ -180,6 +188,25 @@ const Gallery = () => {
             </Card>
           ))}
         </div>
+
+        {/* Lightbox Modal */}
+        <Dialog open={!!lightboxImage} onOpenChange={(open) => !open && setLightboxImage(null)}>
+          <DialogContent className="max-w-7xl w-[95vw] h-[95vh] p-0 bg-black/95 border-none">
+            <DialogClose className="absolute right-4 top-4 z-50 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
+              <X className="h-8 w-8 text-white" />
+              <span className="sr-only">Fechar</span>
+            </DialogClose>
+            {lightboxImage && (
+              <div className="flex items-center justify-center w-full h-full p-4">
+                <img
+                  src={lightboxImage.src}
+                  alt={lightboxImage.alt}
+                  className="max-w-full max-h-full object-contain animate-scale-in"
+                />
+              </div>
+            )}
+          </DialogContent>
+        </Dialog>
       </div>
     </section>
   );
