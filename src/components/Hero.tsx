@@ -40,6 +40,9 @@ const Hero = () => {
             <Button onClick={() => scrollToSection("servicos")} size="lg" className="bg-primary hover:bg-primary/90 text-white shadow-lg">
               {t.hero.servicesBtn}
             </Button>
+            <Button onClick={() => scrollToSection("produtos")} size="lg" variant="secondary" className="shadow-lg">
+              {t.hero.productsBtn}
+            </Button>
             <Button onClick={() => scrollToSection("contato")} size="lg" variant="outline" className="border-2 border-white text-white hover:border-primary shadow-lg bg-transparent">
               {t.hero.contactBtn}
             </Button>

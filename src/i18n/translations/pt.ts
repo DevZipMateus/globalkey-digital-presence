@@ -14,6 +14,7 @@ export const pt = {
     subtitle: "Soluções completas em comércio exterior",
     description: "Assessoria especializada em importação e exportação com atendimento em português, inglês e espanhol. Produtos premium para o mercado de alto-falantes.",
     servicesBtn: "Nossos serviços",
+    productsBtn: "Nossos produtos",
     contactBtn: "Fale conosco",
     highlight1Title: "Comércio global",
     highlight1Desc: "Expertise em importação e exportação",
