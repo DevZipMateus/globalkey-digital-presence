@@ -9,6 +9,8 @@ import filmePolimidaSemAdesivo2 from "@/assets/filme_polimida_sem_adesivo_2.jpg"
 import filmePolimidaAdesivo from "@/assets/filme_polimida_adesivo.jpg";
 import filmePolimidaAdesivo2 from "@/assets/filme_polimida_adesivo_2.jpg";
 import filmePolimidaBlack from "@/assets/filme_polimida_black.jpg";
+import filmePolimidaBlack2 from "@/assets/filme_polimida_black_2.jpg";
+import filmePolimidaBlack3 from "@/assets/filme_polimida_black_3.jpg";
 import fibraLaranja from "@/assets/fibra_laranja.jpg";
 import fibraMarrom from "@/assets/fibra_marrom.jpg";
 import fibraPreta from "@/assets/fibra_preta.jpg";
@@ -43,7 +45,7 @@ const Gallery = () => {
       specs: t.gallery.polimidaBlack.specs,
       description: t.gallery.polimidaBlack.description,
       features: t.gallery.polimidaBlack.features,
-      images: [filmePolimidaBlack],
+      images: [filmePolimidaBlack, filmePolimidaBlack2, filmePolimidaBlack3],
     },
     {
       name: t.gallery.phenolicFiber.name,
