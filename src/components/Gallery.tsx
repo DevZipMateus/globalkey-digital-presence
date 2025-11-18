@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Check, ChevronDown, X } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -24,6 +24,8 @@ const Gallery = () => {
   const { t } = useLanguage();
   const [openItems, setOpenItems] = useState<Record<number, boolean>>({});
   const [lightboxImage, setLightboxImage] = useState<{ src: string; alt: string } | null>(null);
+  const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
+  const [visibleCards, setVisibleCards] = useState<boolean[]>(new Array(6).fill(false));
 
   const products = [
     {
@@ -75,6 +77,34 @@ const Gallery = () => {
     },
   ];
 
+  useEffect(() => {
+    const observers = cardsRef.current.map((card, index) => {
+      if (!card) return null;
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              setVisibleCards((prev) => {
+                const newVisible = [...prev];
+                newVisible[index] = true;
+                return newVisible;
+              });
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+
+      observer.observe(card);
+      return observer;
+    });
+
+    return () => {
+      observers.forEach((observer) => observer?.disconnect());
+    };
+  }, []);
+
   return (
     <section id="gallery" className="py-12 sm:py-16 md:py-20 bg-background">
       <div className="container mx-auto px-4">
@@ -87,7 +117,14 @@ const Gallery = () => {
         
         <div className="grid gap-6 md:grid-cols-2">
           {products.map((product, index) => (
-            <Card key={index} className="overflow-hidden border-l-4 border-l-primary hover:shadow-medium transition-shadow animate-fade-in">
+            <Card 
+              key={index} 
+              ref={(el) => (cardsRef.current[index] = el)}
+              className={`overflow-hidden border-l-4 border-l-primary hover:shadow-medium transition-shadow ${
+                visibleCards[index] ? 'animate-fade-in' : 'opacity-0'
+              }`}
+              style={{ animationDelay: `${index * 150}ms` }}
+            >
               <CardHeader>
                 <CardTitle className="text-xl sm:text-2xl text-foreground">
                   {product.name}
