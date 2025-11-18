@@ -1,6 +1,5 @@
-import { FileText, Package2, Ship, TrendingUp } from "lucide-react";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Ship } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useLanguage } from "@/contexts/LanguageContext";
 import globalKeyImage from "@/assets/global-key-services.png";
 
@@ -21,13 +20,7 @@ const Services = () => {
             </p>
           </div>
 
-          <Tabs defaultValue="assessoria" className="w-full">
-            <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-8 sm:mb-12 h-auto">
-              <TabsTrigger value="assessoria">{t.services.tab1}</TabsTrigger>
-              <TabsTrigger value="produtos">{t.services.tab2}</TabsTrigger>
-            </TabsList>
-
-            <TabsContent value="assessoria" className="space-y-6 sm:space-y-8">
+          <div className="space-y-6 sm:space-y-8">
               <div className="bg-white rounded-xl md:rounded-2xl p-4 sm:p-6 md:p-8 shadow-soft">
                 <div className="flex flex-col lg:flex-row items-start gap-6 mb-8">
                   <div className="w-full lg:w-1/2">
@@ -135,87 +128,7 @@ const Services = () => {
                   </Card>
                 </div>
               </div>
-            </TabsContent>
-
-            <TabsContent value="produtos" className="space-y-4 sm:space-y-6">
-              <div className="bg-white rounded-xl md:rounded-2xl p-4 sm:p-6 md:p-8 shadow-soft mb-4 sm:mb-6">
-                <h3 className="text-xl font-bold text-foreground mb-2">{t.services.productsTitle}</h3>
-                <p className="text-muted-foreground">{t.services.productsIntro}</p>
-              </div>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle>{t.services.product1Name}</CardTitle>
-                  <CardDescription>{t.services.product1Specs}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    {t.services.product1Desc}
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle>{t.services.product2Name}</CardTitle>
-                  <CardDescription>{t.services.product2Specs}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    {t.services.product2Desc}
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle>{t.services.product3Name}</CardTitle>
-                  <CardDescription>{t.services.product3Specs}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    {t.services.product3Desc}
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle>{t.services.product4Name}</CardTitle>
-                  <CardDescription>{t.services.product4Specs}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    {t.services.product4Desc}
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardHeader>
-                  <CardTitle>{t.services.product5Name}</CardTitle>
-                  <CardDescription>{t.services.product5Specs}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">
-                    {t.services.product5Desc}
-                  </p>
-                </CardContent>
-              </Card>
-
-              <div className="bg-accent/10 border border-accent/20 rounded-xl p-6 text-center">
-                <Package2 className="w-12 h-12 text-accent mx-auto mb-3" />
-                <h4 className="text-lg font-semibold text-foreground mb-2">{t.services.comingSoonTitle}</h4>
-                <p className="text-sm text-muted-foreground">
-                  {t.services.comingSoonDesc}
-                </p>
-              </div>
-
-              <div className="text-xs text-muted-foreground text-center p-4 bg-muted/50 rounded-lg">
-                ⚖️ {t.services.disclaimer}
-              </div>
-            </TabsContent>
-          </Tabs>
+            </div>
         </div>
       </div>
     </section>
