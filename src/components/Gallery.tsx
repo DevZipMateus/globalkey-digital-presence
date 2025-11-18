@@ -85,7 +85,7 @@ const Gallery = () => {
           {t.gallery.description}
         </p>
         
-        <div className="space-y-8">
+        <div className="grid gap-6 md:grid-cols-2">
           {products.map((product, index) => (
             <Card key={index} className="overflow-hidden border-l-4 border-l-primary hover:shadow-medium transition-shadow animate-fade-in">
               <CardHeader>
