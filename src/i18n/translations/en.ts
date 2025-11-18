@@ -14,6 +14,7 @@ export const en = {
     subtitle: "Complete solutions in foreign trade",
     description: "Specialized consulting in import and export with service in Portuguese, English and Spanish. Premium products for the speaker market.",
     servicesBtn: "Our services",
+    productsBtn: "Our products",
     contactBtn: "Contact us",
     highlight1Title: "Global trade",
     highlight1Desc: "Expertise in import and export",
