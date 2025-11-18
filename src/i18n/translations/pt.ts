@@ -201,8 +201,8 @@ export const pt = {
     },
     
     polimidaBlack: {
-      name: "Filme de Polimida Black High Performance",
-      description: "Filme de polimida de alta performance com acabamento preto, ideal para aplicações que requerem máxima resistência térmica e estética profissional."
+      name: "Filme de Polimida Black High Performance – 0,15 mm (Altura 520 mm)",
+      description: "Filme de polimida de alta performance, similar ao Kapton preto, desenvolvido para suportar condições extremas de temperatura e carga elétrica. Indicado para bobinas de voz de alta potência e aplicações que exigem máxima durabilidade. ✅ Isolamento superior e alta estabilidade térmica ✅ Ideal para alto-falantes de alta potência ✅ Produção de origem chinesa, padrão industrial premium"
     },
     
     phenolicFiber: {
