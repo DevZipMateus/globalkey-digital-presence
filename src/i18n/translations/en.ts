@@ -202,7 +202,13 @@ export const en = {
     
     polimidaBlack: {
       name: "Polyimide Film Black High Performance",
-      description: "High-performance polyimide film with black finish, ideal for applications requiring maximum thermal resistance and professional aesthetics."
+      specs: "Thickness: 0.15 mm • Height: 520 mm",
+      description: "High-performance polyimide film, similar to black Kapton, designed to withstand extreme temperature and electrical load conditions. Suitable for high-power voice coils and applications requiring maximum durability.",
+      features: [
+        "Superior insulation and high thermal stability",
+        "Ideal for high-power speakers",
+        "Chinese production, premium industrial standard"
+      ]
     },
     
     phenolicFiber: {
