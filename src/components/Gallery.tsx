@@ -145,7 +145,7 @@ const Gallery = () => {
                       className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
                       onClick={() => setLightboxImages({ images: product.images, currentIndex: imgIndex, productName: product.name })}
                     >
-                      <div className="aspect-video max-h-48 overflow-hidden">
+                      <div className="aspect-video max-h-64 overflow-hidden">
                         <img
                           src={image}
                           alt={`${product.name} ${imgIndex + 1}`}
