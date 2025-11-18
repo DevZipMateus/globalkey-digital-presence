@@ -202,7 +202,13 @@ export const es = {
     
     polimidaBlack: {
       name: "Película de Poliimida Black High Performance",
-      description: "Película de poliimida de alto rendimiento con acabado negro, ideal para aplicaciones que requieren máxima resistencia térmica y estética profesional."
+      specs: "Espesor: 0,15 mm • Altura: 520 mm",
+      description: "Película de poliimida de alto rendimiento, similar al Kapton negro, diseñada para soportar condiciones extremas de temperatura y carga eléctrica. Indicada para bobinas de voz de alta potencia y aplicaciones que exigen máxima durabilidad.",
+      features: [
+        "Aislamiento superior y alta estabilidad térmica",
+        "Ideal para altavoces de alta potencia",
+        "Producción de origen chino, estándar industrial premium"
+      ]
     },
     
     phenolicFiber: {

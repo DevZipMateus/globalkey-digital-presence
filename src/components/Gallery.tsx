@@ -39,7 +39,9 @@ const Gallery = () => {
     },
     {
       name: t.gallery.polimidaBlack.name,
+      specs: t.gallery.polimidaBlack.specs,
       description: t.gallery.polimidaBlack.description,
+      features: t.gallery.polimidaBlack.features,
       images: [filmePolimidaBlack],
     },
     {
